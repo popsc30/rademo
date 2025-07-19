@@ -1,0 +1,6 @@
+2025-07-19 17:56:15 | DEBUG | rag.utils.document_processor:__init__:35 | Initializing DocumentProcessor with AWS Region: us-east-1
+2025-07-19 17:56:15 | DEBUG | rag.utils.document_processor:__init__:44 | Embedding Model ID: amazon.titan-embed-text-v1
+2025-07-19 17:56:15 | DEBUG | rag.utils.document_processor:__init__:45 | Image Description Model ID: bedrock/apac.anthropic.claude-3-5-sonnet-20241022-v2:0
+2025-07-19 17:56:59 | DEBUG | rag.utils.document_processor:__init__:35 | Initializing DocumentProcessor with AWS Region: ap-southeast-2
+2025-07-19 17:56:59 | DEBUG | rag.utils.document_processor:__init__:44 | Embedding Model ID: amazon.titan-embed-image-v1
+2025-07-19 17:56:59 | DEBUG | rag.utils.document_processor:__init__:45 | Image Description Model ID: bedrock/apac.amazon.nova-pro-v1:0

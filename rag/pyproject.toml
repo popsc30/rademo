@@ -1,0 +1,32 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "rag using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai>=0.148.0,<1.0.0",
+    "boto3>=1.34.0,<2.0.0",
+    "PyMuPDF>=1.24.0,<1.25.0",
+    "python-docx>=1.1.0,<2.0.0",
+    "langchain>=0.1.0,<0.2.0",
+    "Pillow>=10.0.0,<11.0.0",
+    "reportlab>=4.0.0,<5.0.0",
+    "pymilvus>=2.4.0,<2.5.0",
+    "cohere>=5.0.0,<6.0.0",
+    "python-dotenv>=1.0.0,<2.0.0"
+]
+
+[project.scripts]
+rag = "rag.main:run"
+run_crew = "rag.main:run"
+train = "rag.main:train"
+replay = "rag.main:replay"
+test = "rag.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
