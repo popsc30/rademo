@@ -1,50 +1,52 @@
-# Company Leave Policy
+# Company Leave Policy Guide
 
 ## Overview
+This guide provides a detailed overview of the company's leave policy, including the types of leave available, eligibility criteria, and the process for requesting leave. For comprehensive information, refer to the company's leave policy document.
 
-This report provides a comprehensive overview of the company's leave policy, designed to ensure employees are well-informed about their entitlements, the process for requesting leave, and the company's stance on work-life balance.
+## Types of Leave
+The company offers several types of leave to accommodate various needs:
 
----
+- **Vacation Leave**: Time off for rest and relaxation.
+- **Sick Leave**: Time off due to illness or medical appointments.
+- **Parental Leave**: Time off for new parents to bond with their child.
+- **Bereavement Leave**: Time off to mourn the loss of a loved one.
 
-## Entitlements
+## Eligibility Criteria
+To be eligible for leave, employees must meet certain criteria, which may include:
 
-Employees are entitled to the following types of leave annually:
+- Length of service
+- Job role
+- Company-specific requirements
 
-- **Paid Vacation**: 10 days
-- **Sick Leave**: 5 days
-- **Personal Leave**: 3 days
+## Accrual of Leave Days
+Leave days are typically accrued based on the employee's length of service. Common types of accrued leave include:
 
----
-
-## Company Culture
-
-The company strongly emphasizes **work-life balance** and encourages employees to take their entitled leave to maintain well-being and productivity.
-
----
+- Vacation days
+- Personal days
+- Sick leave
 
 ## Requesting Leave
+Follow these steps to request leave:
 
-To request leave, employees must follow these steps:
+1. **Submit a Leave Request Form**: Complete and submit the required form.
+2. **Provide Necessary Documentation**: 
+   - Medical certificates for sick leave
+   - Other relevant documents as required
+3. **Get Approval from Your Supervisor**: Ensure your leave request is approved by your direct supervisor.
 
-1. **Submit a Leave Application Form**: Employees need to fill out and submit a leave application form.
-2. **Advance Notice**: The form must be submitted at least **two weeks in advance** of the requested leave dates.
+## Notification
+Inform your supervisor and relevant team members about your leave. Make sure they are aware of your absence and any arrangements needed in your absence.
 
----
+## Returning from Leave
+Upon returning from leave, follow these post-leave procedures:
 
-## HR Portal
-
-Employees can manage their leave through the HR portal, where they can:
-
-- **Check Leave Balance**: View the remaining days of each type of leave.
-- **Submit Leave Requests**: Electronically submit leave application forms.
-
-**Image:** HR portal interface showing leave balance and request form. (Path: /path/to/image.png)
----
-
-## Denial of Leave
-
-The company reserves the right to deny leave requests if granting the leave would significantly impact business operations. 
+- Submit a return-to-work form if required.
+- Discuss any work that accumulated during your absence with your supervisor.
 
 ---
 
-By following this policy, employees can ensure they are taking their entitled leave while maintaining a balanced and productive work environment. For more detailed information or to access the HR portal, please contact the Human Resources department.
+**Image:** A chart showing the types of leave and their accrual rates. (Path: /path/to/image.png)
+
+---
+
+For more detailed information, please refer to the company's comprehensive leave policy document.

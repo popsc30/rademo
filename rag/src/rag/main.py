@@ -3,7 +3,7 @@ import warnings
 from dotenv import load_dotenv
 from loguru import logger
 
-from rag.crew import Rag
+from rag.crew import RagCrew
 from rag.utils.document_processor import DocumentProcessor
 from rag.utils.logging_config import setup_logging
 from rag.utils.milvus_manager import MilvusManager
@@ -15,7 +15,7 @@ load_dotenv()
 
 
 
-def train(file_path: str, mock: bool = False):
+def train_internal(file_path: str, mock: bool = False):
     """
     Processes a document and adds it to the knowledge base.
     """
@@ -52,7 +52,7 @@ def run(query: str, mock: bool = False):
                 'topic': query,
                 'documents': documents,
             }
-            final_report = Rag(mock=mock).crew().kickoff(inputs=inputs)
+            final_report = RagCrew().crew().kickoff(inputs=inputs)
         
         logger.info("\n--- Final Report ---")
         logger.info(final_report)
@@ -60,6 +60,30 @@ def run(query: str, mock: bool = False):
 
     except Exception as e:
         logger.exception(f"An error occurred while running the query: {e}")
+
+def train():
+    """
+    Train the crew for a given number of iterations.
+    """
+    query = "What the company's policy?"
+    try:
+        milvus_manager = MilvusManager()
+        retriever = Retriever(milvus_manager)
+        documents = retriever.retrieve(query)
+
+        logger.info("Passing documents to CrewAI for final report generation...")
+        inputs = {
+            'topic': query,
+            'documents': documents,
+        }
+        # final_report = RagCrew().crew().kickoff(inputs=inputs)
+        import sys
+        RagCrew().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
+
+        logger.info("--------------------\n")
+    
+    except Exception as e:
+        raise Exception(f"An error occurred while training the crew: {e}")
 
 
 def main():
@@ -86,7 +110,7 @@ def main():
     args = parser.parse_args()
 
     if args.command == "train":
-        train(args.file, mock=args.mock)
+        train_internal(args.file, mock=args.mock)
     elif args.command == "run":
         run(args.query, mock=args.mock)
     elif args.command == "reset-db":

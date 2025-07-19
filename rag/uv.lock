@@ -2977,6 +2977,7 @@ dependencies = [
     { name = "pymilvus" },
     { name = "pymupdf" },
     { name = "python-docx" },
+    { name = "python-dotenv" },
     { name = "reportlab" },
 ]
 
@@ -2990,6 +2991,7 @@ requires-dist = [
     { name = "pymilvus", specifier = ">=2.4.0,<2.5.0" },
     { name = "pymupdf", specifier = ">=1.24.0,<1.25.0" },
     { name = "python-docx", specifier = ">=1.1.0,<2.0.0" },
+    { name = "python-dotenv", specifier = ">=1.0.0,<2.0.0" },
     { name = "reportlab", specifier = ">=4.0.0,<5.0.0" },
 ]
 

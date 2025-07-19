@@ -6255,3 +6255,954 @@ The company reserves the right to deny leave requests if granting the leave woul
 By following this policy, employees can ensure they are taking their entitled leave while maintaining a balanced and productive work environment. For more detailed information or to access the HR portal, please contact the Human Resources department.
 2025-07-19 18:37:14 | INFO  | __main__:run:59 | --------------------
 
+2025-07-19 18:43:59 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-19 18:43:59 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-19 18:43:59 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-19 18:43:59 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-19 18:43:59 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-19 18:44:00 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-19 18:44:00 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-19 18:44:09 | INFO  | __main__:run:57 | 
+--- Final Report ---
+2025-07-19 18:44:09 | INFO  | __main__:run:58 | # Company Leave Policy
+
+## Introduction
+The company places a strong emphasis on work-life balance and encourages all employees to take their entitled leave to maintain a healthy and productive work environment.
+
+## Entitled Leave
+Employees are entitled to the following types of leave annually:
+
+- **Paid Vacation**: 10 days
+- **Sick Leave**: 5 days
+- **Personal Leave**: 3 days
+
+## Policy Changes
+Please be aware that the company reserves the right to modify benefits and policies at any time. It is important to stay updated with any changes communicated through official channels.
+
+## Onboarding Information
+New employees should thoroughly review the comprehensive onboarding package. This package includes detailed information about company policies, including the leave policy.
+
+---
+
+**Note:** For visual aids or additional information, please refer to the onboarding materials provided during your initial employment process.
+
+---
+2025-07-19 18:44:09 | INFO  | __main__:run:59 | --------------------
+
+2025-07-20 09:04:44 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:04:44 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:04:44 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:04:44 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:04:44 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:04:45 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:04:45 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:04:45 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x173bf6020>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x173bf5f80>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:05:11 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:05:11 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:05:11 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:05:11 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:05:11 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:05:11 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:05:12 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:05:12 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x16a2d1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x16a2d1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:05:33 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:05:33 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:05:33 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:05:33 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:05:33 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:05:34 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:05:34 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:05:34 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x16c0d1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x16c0d1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:05:56 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:05:56 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:05:56 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:05:57 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:05:57 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:05:57 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:05:57 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:05:57 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x1787f1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x1787f1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:06:17 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:06:17 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:06:17 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:06:17 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:06:17 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:06:18 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:06:18 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:06:18 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x1786f1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x1786f1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:06:39 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:06:39 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:06:39 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:06:39 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:06:39 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:06:39 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:06:39 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:06:39 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x16bdd1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x16bdd1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:07:01 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:07:01 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:07:01 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:07:01 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:07:01 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:07:01 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:07:01 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:07:01 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x161ad1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x161ad1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:07:22 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:07:22 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:07:22 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:07:22 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:07:22 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:07:23 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:07:23 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:07:23 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x178dd1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x178dd1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:07:45 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:07:45 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:07:45 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:07:45 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:07:45 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:07:45 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:07:46 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:07:46 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x16a4d1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x16a4d1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:08:07 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:08:07 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:08:07 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:08:07 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:08:07 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:08:07 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:08:08 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:08:08 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x1489f1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x1489f1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:08:31 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:08:31 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:08:31 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:08:31 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:08:31 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:08:31 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:08:32 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:08:32 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x1761d1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x1761d1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:08:53 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:08:53 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:08:53 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:08:53 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:08:53 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:08:53 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:08:53 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:08:53 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x14d2f1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x14d2f1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:09:17 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:09:17 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:09:17 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:09:17 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:09:17 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:09:17 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:09:18 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:09:18 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x1787d1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x1787d1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:09:40 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:09:40 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:09:40 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:09:40 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:09:40 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:09:40 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:09:40 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:09:40 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x174cd1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x174cd1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:10:03 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:10:03 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:10:03 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:10:03 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:10:03 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:10:04 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:10:04 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:10:04 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x1744d1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x1744d1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:10:26 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:10:26 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:10:26 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:10:26 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:10:26 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:10:26 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:10:27 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:10:27 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x178ef1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x178ef1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:10:52 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:10:52 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:10:52 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:10:52 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:10:52 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:10:52 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:10:52 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:10:52 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x16bff1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x16bff1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:11:14 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:11:14 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:11:14 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:11:14 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:11:14 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:11:14 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:11:14 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:11:14 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x177bf1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x177bf1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:11:36 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:11:36 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:11:36 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:11:36 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:11:36 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:11:36 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:11:36 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:11:36 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x16e66d800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x16e66d760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:11:57 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:11:57 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:11:57 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:11:58 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:11:58 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:11:58 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:11:58 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:11:58 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x1742f1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x1742f1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:12:19 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:12:19 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:12:19 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:12:19 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:12:19 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:12:19 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:12:19 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:12:19 | ERROR | __main__:run:62 | An error occurred while running the query: object.__init__() takes exactly one argument (the instance to initialize)
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 101, in <module>
+    main()
+    └ <function main at 0x16f0f1800>
+
+  File "/private/tmp/rag-demo/rag/src/rag/main.py", line 91, in main
+    run(args.query, mock=args.mock)
+    │   │    │           │    └ False
+    │   │    │           └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    │   │    └ "what's the company's leave policy?"
+    │   └ Namespace(command='run', query="what's the company's leave policy?", mock=False)
+    └ <function run at 0x16f0f1760>
+
+> File "/private/tmp/rag-demo/rag/src/rag/main.py", line 55, in run
+    final_report = RagCrew(mock=mock).crew().kickoff(inputs=inputs)
+                   │            │                           └ {'topic': "what's the company's leave policy?", 'documents': ['Yueniu Tech New Employee Onboarding \nHandbook\nWelcome to Yue...
+                   │            └ False
+                   └ <class 'crewai.project.crew_base.CrewBase(RagCrew)'>
+
+  File "/Users/jadoreran/miniconda3/lib/python3.12/site-packages/crewai/project/crew_base.py", line 34, in __init__
+    super().__init__(*args, **kwargs)
+                      │       └ {'mock': False}
+                      └ ()
+
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)
+2025-07-20 09:14:14 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:14:14 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:14:14 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:14:14 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:14:14 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:14:15 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:14:15 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:14:29 | INFO  | __main__:run:57 | 
+--- Final Report ---
+2025-07-20 09:14:29 | INFO  | __main__:run:58 | # Company Leave Policy
+
+## Overview
+
+To understand the company's leave policy, follow these steps:
+
+## 1. Review the Employee Handbook
+
+The most detailed information about the company's leave policy can be found in the **Employee Handbook**. This document outlines all types of leave available, including vacation, sick leave, bereavement leave, and unpaid leave under the Family and Medical Leave Act (FMLA).
+
+## 2. Understand the Types of Leave
+
+### Paid Vacation
+
+- **Entitlement**: Employees are entitled to 10 days of paid vacation per year.
+- **Additional Days**: Additional days are granted based on years of service.
+
+### Paid Holidays
+
+- **Entitlement**: The company provides 10 paid holidays per year.
+- **Included Holidays**: Major national holidays are included.
+
+### Sick Leave
+
+- **Availability**: Sick leave is available.
+- **Days Dependent on Employment Length**: The number of days depends on the length of employment.
+
+### Bereavement Leave
+
+- **Offering**: The company offers bereavement leave for the loss of an immediate family member.
+
+### Unpaid Leave
+
+- **Availability**: Employees can take unpaid leave for family and medical reasons under the FMLA.
+
+## 3. Flexible Work Arrangements
+
+The company has a flexible work arrangement policy that allows employees to:
+
+- **Work Remotely**: Option to work from home.
+- **Adjust Hours**: Flexibility to adjust working hours.
+
+This promotes a work-life balance.
+
+## 4. Submit a Leave Request
+
+Before taking any leave, employees must:
+
+- **Complete a Leave Request Form**: Submit the form to their manager for approval.
+- **Ensure Proper Documentation**: This ensures that the leave is properly documented and approved according to company policy.
+
+## 5. Encouragement for Work-Life Balance
+
+The company encourages a work-life balance and supports employees in taking time off when needed, fostering a healthy and productive work environment.
+
+---
+
+**Note:** If you encounter any `[image_info]` tags in the text, they will be replaced with clear instructions for the user interface. For example:
+
+-----------------
+
+**Image:** A chart showing Q3 sales. (Path: /path/to/image.png)
+
+-----------------
+
+Ensure you refer to the Employee Handbook for the most accurate and detailed information regarding the leave policy.
+2025-07-20 09:14:29 | INFO  | __main__:run:59 | --------------------
+
+2025-07-20 09:14:45 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 09:14:46 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 09:14:46 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 09:14:46 | INFO  | rag.utils.retriever:retrieve:45 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 09:14:46 | INFO  | rag.utils.retriever:_embed_query:58 | Embedding query (real)...
+2025-07-20 09:14:46 | INFO  | rag.utils.retriever:_search_milvus:81 | Searching Milvus for top 50 results...
+2025-07-20 09:14:46 | INFO  | __main__:run:50 | Passing documents to CrewAI for final report generation...
+2025-07-20 09:14:57 | INFO  | __main__:run:57 | 
+--- Final Report ---
+2025-07-20 09:14:57 | INFO  | __main__:run:58 | # Company Leave Policy Guide
+
+## Overview
+This guide provides a detailed overview of the company's leave policy, including the types of leave available, eligibility criteria, and the process for requesting leave. For comprehensive information, refer to the company's leave policy document.
+
+## Types of Leave
+The company offers several types of leave to accommodate various needs:
+
+- **Vacation Leave**: Time off for rest and relaxation.
+- **Sick Leave**: Time off due to illness or medical appointments.
+- **Parental Leave**: Time off for new parents to bond with their child.
+- **Bereavement Leave**: Time off to mourn the loss of a loved one.
+
+## Eligibility Criteria
+To be eligible for leave, employees must meet certain criteria, which may include:
+
+- Length of service
+- Job role
+- Company-specific requirements
+
+## Accrual of Leave Days
+Leave days are typically accrued based on the employee's length of service. Common types of accrued leave include:
+
+- Vacation days
+- Personal days
+- Sick leave
+
+## Requesting Leave
+Follow these steps to request leave:
+
+1. **Submit a Leave Request Form**: Complete and submit the required form.
+2. **Provide Necessary Documentation**: 
+   - Medical certificates for sick leave
+   - Other relevant documents as required
+3. **Get Approval from Your Supervisor**: Ensure your leave request is approved by your direct supervisor.
+
+## Notification
+Inform your supervisor and relevant team members about your leave. Make sure they are aware of your absence and any arrangements needed in your absence.
+
+## Returning from Leave
+Upon returning from leave, follow these post-leave procedures:
+
+- Submit a return-to-work form if required.
+- Discuss any work that accumulated during your absence with your supervisor.
+
+---
+
+**Image:** A chart showing the types of leave and their accrual rates. (Path: /path/to/image.png)
+
+---
+
+For more detailed information, please refer to the company's comprehensive leave policy document.
+2025-07-20 09:14:57 | INFO  | __main__:run:59 | --------------------
+
