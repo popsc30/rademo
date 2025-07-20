@@ -1291,3 +1291,21 @@ TypeError: Hit.get() takes 2 positional arguments but 3 were given
 2025-07-20 22:54:31 | INFO  | rag.utils.retriever:_rerank_documents:78 | Reranked 5 documents.
 2025-07-20 22:54:31 | INFO  | rag.api:query_rag:83 | Retrieved 5 documents for the query.
 2025-07-20 22:54:41 | INFO  | rag.api:query_rag:92 | Successfully generated the final report.
+2025-07-20 23:39:21 | INFO  | rag.api:query_rag:83 | Received query: 'app = FastAPI(     title="RAG Crew API",     description="An API for processing documents and answering questions using a RAG-based CrewAI.",     version="1.0.0" )'
+2025-07-20 23:39:21 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 23:39:21 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 23:39:22 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'app = FastAPI(     title="RAG Crew API",     description="An API for processing documents and answering questions using a RAG-based CrewAI.",     version="1.0.0" )'
+2025-07-20 23:39:22 | INFO  | rag.utils.retriever:_embed_query:93 | Embedding query (real)...
+2025-07-20 23:39:22 | INFO  | rag.utils.retriever:_search_milvus:116 | Searching Milvus for top 50 results...
+2025-07-20 23:39:22 | INFO  | rag.utils.retriever:_rerank_documents:65 | Reranking documents...
+2025-07-20 23:39:23 | INFO  | rag.utils.retriever:_rerank_documents:78 | Reranked 5 documents.
+2025-07-20 23:39:23 | INFO  | rag.api:query_rag:94 | Retrieved 5 documents for the query.
+2025-07-20 23:42:57 | INFO  | rag.api:query_rag:83 | Received query: 'what the company's policy?'
+2025-07-20 23:42:57 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 23:42:57 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 23:42:57 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'what the company's policy?'
+2025-07-20 23:42:57 | INFO  | rag.utils.retriever:_embed_query:93 | Embedding query (real)...
+2025-07-20 23:42:58 | INFO  | rag.utils.retriever:_search_milvus:116 | Searching Milvus for top 50 results...
+2025-07-20 23:42:58 | INFO  | rag.utils.retriever:_rerank_documents:65 | Reranking documents...
+2025-07-20 23:42:58 | INFO  | rag.utils.retriever:_rerank_documents:78 | Reranked 5 documents.
+2025-07-20 23:42:58 | INFO  | rag.api:query_rag:94 | Retrieved 5 documents for the query.

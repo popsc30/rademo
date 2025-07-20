@@ -3,8 +3,10 @@ import tempfile
 from pathlib import Path
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from loguru import logger
+
 
 from rag.crew import RagCrew
 from rag.utils.document_processor import DocumentProcessor
@@ -17,6 +19,15 @@ app = FastAPI(
     title="RAG Crew API",
     description="An API for processing documents and answering questions using a RAG-based CrewAI.",
     version="1.0.0"
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
 )
 
 # Setup logging
@@ -89,8 +100,13 @@ async def query_rag(request: QueryRequest):
         }
         final_report = RagCrew().crew().kickoff(inputs=inputs)
         
-        logger.info("Successfully generated the final report.")
-        return {"answer": final_report}
+        # Return the final report along with the source documents
+        return {
+            "answer": {"raw": final_report},
+            "meta": {
+                "documents": documents
+            }
+        }
 
     except Exception as e:
         logger.exception(f"An error occurred during the query process: {e}")

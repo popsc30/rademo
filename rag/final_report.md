@@ -1,58 +1,51 @@
-# Company Leave Policy Guide
+# Yueniu Tech Company Policies
 
-## Introduction
-This document provides a comprehensive guide to understanding the company's leave policy. Follow the steps below to gain a thorough understanding of the various types of leave available, the process for requesting leave, and the necessary documentation.
+To understand Yueniu Tech's company policies, follow these steps:
 
-## 1. Review the Employee Handbook
-The company's leave policy is detailed in the Employee Handbook, which is available on the company intranet.
+## 1. Review the Onboarding Handbook
 
-**Action**: Log in to the company intranet and locate the Employee Handbook.
+- Read the **"Yueniu Tech New Employee Onboarding Handbook"** provided to new employees. This handbook includes an overview of company values, expectations, and policies.
 
-## 2. Understand the Types of Leave
-The company offers several types of leave:
+## 2. Access Important Policies and Documents
 
-- **Paid Annual Leave**: Minimum of 20 days.
-- **Sick Leave**: Available for when you are unwell.
-- **Bereavement Leave**: Provided for the loss of a family member.
+Visit the company intranet to review key documents. These include:
 
-**Action**: Read the sections in the Employee Handbook that detail each type of leave, including eligibility, accrual rates, and any required documentation.
+- **Code of Conduct**
+- **Employee Handbook**
+- **Data Protection and Privacy Policy**
+- **Equal Employment Opportunity Policy**
+- **Remote Work Guidelines**
 
-## 3. Check Accrual and Eligibility
-The handbook provides information on how leave accrues and the eligibility criteria for taking leave.
+## 3. Understand Workplace Policies
 
-**Action**: Note down the accrual rates and any waiting periods or service requirements mentioned in the handbook.
+Familiarize yourself with specific workplace policies outlined in the documents:
 
-## 4. Requesting Leave
-To request leave, you typically need to submit a formal request through your manager or the HR department.
+### Attendance and Punctuality
 
-**Action**: Follow the procedure outlined in the Employee Handbook for requesting leave. This may involve filling out a form or sending an email.
+- Regular attendance is essential. Notify your supervisor and HR if you are running late or unable to attend work.
 
-## 5. Notify Your Manager
-It is important to inform your direct manager about your leave plans as early as possible.
+### Dress Code
 
-**Action**: Schedule a meeting or send an email to your manager to discuss your leave request.
+- The dress code is smart casual unless otherwise specified for meetings or events.
 
-## 6. HR Approval
-After notifying your manager, your leave request will likely need approval from the HR department.
+### IT & Security Policies
 
-**Action**: Ensure you follow up with HR to confirm that your leave has been approved and note any conditions or requirements mentioned.
+- Adhere to the company’s IT usage and cybersecurity policies. Use company equipment for professional purposes only.
 
-## 7. Documentation
-Depending on the type of leave, you may need to provide documentation (e.g., a doctor’s note for sick leave).
+### Anti-Harassment Policy
 
-**Action**: Prepare and submit any required documentation as specified in the Employee Handbook.
+- Yueniu Tech is committed to a workplace free from harassment or discrimination. Any concerns will be taken seriously and addressed promptly.
 
-## 8. Returning from Leave
-The handbook should also provide guidelines on what to do when returning from leave, including any required check-ins or documentation.
+### Health and Safety
 
-**Action**: Review the return-to-work process in the Employee Handbook and follow the outlined steps.
+- Ensure you are familiar with emergency exits, first aid kits, and safety procedures.
 
-## 9. Contact HR for Clarifications
-If you have any questions or need further clarification on the leave policy, reach out to the HR team.
+## 4. Contact HR for Additional Information
 
-**Action**: 
-- Email HR Manager Sarah Liu at `sarah.liu@yueniutech.com`
-- Email HR Generalist Tom Zhang at `tom.zhang@yueniutech.com`
-- Call +64 9 123 4567
+If you have any questions or need further clarification on any policy, reach out to the HR team:
 
-By following these steps, you will have a comprehensive understanding of the company's leave policy and the process for requesting and taking leave.
+- **HR Manager**: Sarah Liu – sarah.liu@yueniutech.com
+- **HR Generalist**: Tom Zhang – tom.zhang@yueniutech.com
+- **Phone**: +64 9 123 4567
+
+By following these steps, you will gain a comprehensive understanding of Yueniu Tech's company policies.
