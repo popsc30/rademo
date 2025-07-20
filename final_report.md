@@ -1,52 +1,58 @@
-# Company Leave Policy Guide
+# Company Leave Policy
 
 ## Overview
-This guide provides a detailed overview of the company's leave policy, including the types of leave available, eligibility criteria, and the process for requesting leave. For comprehensive information, refer to the company's leave policy document.
-
-## Types of Leave
-The company offers several types of leave to accommodate various needs:
-
-- **Vacation Leave**: Time off for rest and relaxation.
-- **Sick Leave**: Time off due to illness or medical appointments.
-- **Parental Leave**: Time off for new parents to bond with their child.
-- **Bereavement Leave**: Time off to mourn the loss of a loved one.
-
-## Eligibility Criteria
-To be eligible for leave, employees must meet certain criteria, which may include:
-
-- Length of service
-- Job role
-- Company-specific requirements
-
-## Accrual of Leave Days
-Leave days are typically accrued based on the employee's length of service. Common types of accrued leave include:
-
-- Vacation days
-- Personal days
-- Sick leave
-
-## Requesting Leave
-Follow these steps to request leave:
-
-1. **Submit a Leave Request Form**: Complete and submit the required form.
-2. **Provide Necessary Documentation**: 
-   - Medical certificates for sick leave
-   - Other relevant documents as required
-3. **Get Approval from Your Supervisor**: Ensure your leave request is approved by your direct supervisor.
-
-## Notification
-Inform your supervisor and relevant team members about your leave. Make sure they are aware of your absence and any arrangements needed in your absence.
-
-## Returning from Leave
-Upon returning from leave, follow these post-leave procedures:
-
-- Submit a return-to-work form if required.
-- Discuss any work that accumulated during your absence with your supervisor.
+Welcome aboard! We’re excited to have you with us. This guide provides a comprehensive overview of the company's leave policy to ensure you understand your entitlements and the procedures for requesting leave.
 
 ---
 
-**Image:** A chart showing the types of leave and their accrual rates. (Path: /path/to/image.png)
+## 1. Review the Employee Handbook
+The leave policy is detailed in the **Employee Handbook**, which is available on the company intranet.
+
+- **Access the intranet** and locate the Employee Handbook for comprehensive information on leave entitlements, procedures, and guidelines.
 
 ---
 
-For more detailed information, please refer to the company's comprehensive leave policy document.
+## 2. Understand Your Entitlements
+According to the documents, employees are entitled to:
+
+- **Paid Annual Leave:** Minimum of 20 days per year.
+- **Sick Leave:** Entitlements and procedures are detailed in the Employee Handbook.
+- **Bereavement Leave:** Specific days allocated for bereavement, detailed in the Employee Handbook.
+
+---
+
+## 3. Requesting Leave
+To request leave, follow these steps:
+
+1. **Speak to Your Manager:**
+   - Discuss your leave request with your direct manager.
+
+2. **Submit a Formal Request:**
+   - Use the company’s leave request form, which can typically be found on the intranet or provided by your manager.
+
+3. **HR Approval:**
+   - Your leave request will need approval from the HR department. Ensure you allow sufficient time for processing.
+
+---
+
+## 4. During Your Leave
+While on leave, stay accessible if necessary, especially for critical issues. Check with your manager for specific expectations.
+
+---
+
+## 5. Returning from Leave
+- Notify your manager and HR of your return date in advance.
+- If required, submit any necessary documentation (e.g., medical certificates for sick leave).
+
+---
+
+## 6. Additional Resources
+For any questions or further clarification, contact the HR team:
+
+- **HR Manager:** Sarah Liu – sarah.liu@yueniutech.com
+- **HR Generalist:** Tom Zhang – tom.zhang@yueniutech.com
+- **Phone:** +64 9 123 4567
+
+---
+
+If you ever have questions or need support, please don’t hesitate to reach out to your manager or the HR team.

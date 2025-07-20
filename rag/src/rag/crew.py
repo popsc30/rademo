@@ -1,6 +1,5 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from rag.tools.rerank_tool import RerankTool
 
 @CrewBase
 class RagCrew():
@@ -12,7 +11,6 @@ class RagCrew():
     def search_synthesizer(self) -> Agent:
         return Agent(
             config=self.agents_config['search_synthesizer'],
-            tools=[RerankTool()],
             verbose=True
         )
 

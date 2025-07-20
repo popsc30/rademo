@@ -1,20 +1,26 @@
 synthesize_guide_task:
   description: >
-    Take the user's query: `{topic}` and the list of retrieved documents,
-    rerank them for relevance, and then synthesize a clear, step-by-step guide.
+    Take the user's query: `{topic}` and the list of retrieved documents: {documents},
+    and then synthesize a clear, step-by-step guide.
+    - It is crucial that you preserve any `[image_info]` tags exactly as they appear in the source documents.
+    - Do not alter the content of the `[image_info]` tags in any way.
+    - Place the `[image_info]` tags in the most relevant sections of the guide you create.
   expected_output: >
-    A clear, step-by-step guide based on the most relevant retrieved information.
+    A clear, step-by-step guide based on the most relevant retrieved information,
+    with any `[image_info]` tags from the source documents preserved and included.
 
 report_generation_task:
   description: >
     Take the provided step-by-step guide and transform it into a final, user-friendly report.
     - Your primary input is the result of the synthesize_guide_task.
     - Format the entire output using Markdown for excellent readability. Use headings, bullet points, numbered lists, and bold text to structure the information clearly.
-    - If you encounter an `[image_info]` tag in the text, replace it with a clear instruction for the user interface. For example, if you see `[image_info]{"description": "A chart showing Q3 sales.", "imgpath": "/path/to/image.png"}[/image_info]`, you should output:
+    - You MUST ONLY process `[image_info]` tags if they are explicitly present in the input from the previous step.
+    - If an `[image_info]` tag exists, like `[image_info]{"description": "A chart showing Q3 sales.", "imgpath": "/path/to/image.png"}[/image_info]`, you must reformat it exactly as:
       "---
       **Image:** A chart showing Q3 sales. (Path: /path/to/image.png)
       ---"
+    - If there are NO `[image_info]` tags in the input, you MUST NOT create, invent, or hallucinate any image references in the final report.
     - Ensure the final report is well-organized, professional, and directly addresses the original user query: `{topic}`.
   expected_output: >
     A polished, comprehensive, and easy-to-read report in Markdown format.
-    The report should be fully formatted and include clear placeholders for any images referenced in the source guide.
+    The report should be fully formatted. It should only include image placeholders if they were explicitly provided in the input guide.
