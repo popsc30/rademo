@@ -92,6 +92,7 @@ async def query_rag(request: QueryRequest):
             return {"answer": "I could not find any relevant documents to answer your question. Please try uploading more documents or rephrasing your query."}
 
         logger.info(f"Retrieved {len(documents)} documents for the query.")
+        logger.info(f"Documents: {documents}")
 
         # Run the crew to get the final report
         inputs = {
@@ -102,7 +103,7 @@ async def query_rag(request: QueryRequest):
         
         # Return the final report along with the source documents
         return {
-            "answer": {"raw": final_report},
+            "answer": {final_report["raw"]},
             "meta": {
                 "documents": documents
             }

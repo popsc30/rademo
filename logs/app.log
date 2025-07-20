@@ -7506,3 +7506,233 @@ Other important policies and guidelines are available on the intranet, such as t
 By following these steps, you will be able to understand and navigate the company's leave policy effectively.
 2025-07-20 22:24:36 | INFO  | __main__:run:60 | --------------------
 
+2025-07-20 23:49:40 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 23:49:40 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 23:49:40 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 23:49:40 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 23:49:40 | INFO  | rag.utils.retriever:_embed_query:99 | Embedding query (real)...
+2025-07-20 23:49:41 | INFO  | rag.utils.retriever:_search_milvus:122 | Searching Milvus for top 50 results...
+2025-07-20 23:49:41 | INFO  | rag.utils.retriever:_rerank_documents:66 | Reranking documents...
+2025-07-20 23:49:42 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 3) is IRRELEVANT with score 0.2821. Filtering out.
+2025-07-20 23:49:42 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 2) is IRRELEVANT with score 0.1882. Filtering out.
+2025-07-20 23:49:42 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 4) is IRRELEVANT with score 0.1272. Filtering out.
+2025-07-20 23:49:42 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 5) is IRRELEVANT with score 0.0705. Filtering out.
+2025-07-20 23:49:42 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 1) is IRRELEVANT with score 0.0618. Filtering out.
+2025-07-20 23:49:42 | INFO  | rag.utils.retriever:_rerank_documents:84 | Reranked and filtered 0 documents from an initial 6.
+2025-07-20 23:49:42 | INFO  | __main__:run:45 | Documents: []
+2025-07-20 23:49:42 | INFO  | __main__:run:51 | Passing documents to CrewAI for final report generation...
+2025-07-20 23:49:49 | INFO  | __main__:run:58 | 
+--- Final Report ---
+2025-07-20 23:49:49 | INFO  | __main__:run:59 | # Company Leave Policy Guide
+
+This guide provides a comprehensive approach to finding and understanding your company's leave policy. Follow these steps to ensure you have all the necessary information.
+
+## 1. Check the Employee Handbook
+
+Most companies provide an employee handbook, either in physical or digital format. This handbook usually contains detailed information about the company's policies, including leave policies.
+
+## 2. Review HR Communications
+
+Look for any emails or notices from the Human Resources (HR) department. HR often sends out updates or reminders about leave policies, especially at the beginning of the year or when there are changes.
+
+## 3. Consult the Company’s Intranet
+
+Many companies have an internal website or intranet where policies are published. Check the HR or employee resources section for leave policy details.
+
+## 4. Speak with HR Directly
+
+If you can’t find the information, the best course of action is to contact your HR department. They can provide you with the most accurate and up-to-date information regarding the company's leave policy.
+
+## 5. Look for Posted Notices
+
+Sometimes, leave policies are posted in common areas such as break rooms or bulletin boards. Check these areas for any printed notices.
+
+## 6. Review Your Employment Contract
+
+Your employment contract may include specific details about leave entitlements. Review this document for any relevant information.
+
+## 7. Check for External Resources
+
+If your company uses external HR management systems or platforms, log in to these systems. They often have sections dedicated to employee benefits and policies.
+
+By following these steps, you should be able to find the company's leave policy.
+2025-07-20 23:49:49 | INFO  | __main__:run:60 | --------------------
+
+2025-07-20 23:53:07 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 23:53:07 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 23:53:07 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 23:53:07 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 23:53:07 | INFO  | rag.utils.retriever:_embed_query:99 | Embedding query (real)...
+2025-07-20 23:53:08 | INFO  | rag.utils.retriever:_search_milvus:122 | Searching Milvus for top 50 results...
+2025-07-20 23:53:08 | INFO  | rag.utils.retriever:_rerank_documents:66 | Reranking documents...
+2025-07-20 23:53:09 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 3) is IRRELEVANT with score 0.2821. Filtering out.
+2025-07-20 23:53:09 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 2) is IRRELEVANT with score 0.1882. Filtering out.
+2025-07-20 23:53:09 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 4) is IRRELEVANT with score 0.1272. Filtering out.
+2025-07-20 23:53:09 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 5) is IRRELEVANT with score 0.0705. Filtering out.
+2025-07-20 23:53:09 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 1) is IRRELEVANT with score 0.0618. Filtering out.
+2025-07-20 23:53:09 | INFO  | rag.utils.retriever:_rerank_documents:84 | Reranked and filtered 0 documents from an initial 6.
+2025-07-20 23:53:09 | INFO  | __main__:run:45 | Documents: []
+2025-07-20 23:53:09 | INFO  | __main__:run:51 | Passing documents to CrewAI for final report generation...
+2025-07-20 23:53:17 | INFO  | __main__:run:58 | 
+--- Final Report ---
+2025-07-20 23:53:17 | INFO  | __main__:run:59 | # Company Leave Policy Guide
+
+## Introduction
+Understanding your company's leave policy is essential for planning your time off work effectively. This guide provides a step-by-step approach to help you navigate and comprehend the leave policy at your organization.
+
+## Steps to Understand the Company's Leave Policy
+
+### 1. Review the Employee Handbook
+- **Action:** Locate and read the company's Employee Handbook.
+- **Details:** This document usually contains all employee policies, including the leave policy.
+- **Tip:** Look for a section titled "Leave Policy" or similar.
+
+### 2. Check Company Intranet or HR Portal
+- **Action:** Log in to the company’s intranet or HR portal.
+- **Navigation:** 
+  - Go to the HR section.
+  - Find the section dedicated to employee policies.
+- **Search:** Look for documents or pages related to leave policies.
+
+### 3. Consult the HR Department
+- **Action:** Contact the Human Resources (HR) department if the information is unclear.
+- **Preparation:** 
+  - Have specific questions ready about the types of leave available (e.g., vacation leave, sick leave, parental leave).
+  - Inquire about accrual rates and required procedures for requesting leave.
+
+### 4. Read Past Communications
+- **Action:** Review any past emails or memos from HR regarding changes or updates to the leave policy.
+- **Benefit:** These communications often provide detailed explanations and any recent modifications.
+
+### 5. Attend Orientation Sessions or Workshops
+- **Action:** If available, attend company-organized orientation sessions or workshops that cover employee policies, including leave.
+- **Note-taking:** Take notes during these sessions for future reference.
+
+### 6. Review Contractual Agreements
+- **Action:** If you have an employment contract, review it for any specific clauses related to leave.
+- **Details:** Contracts may include additional or specific terms regarding leave entitlements.
+
+### 7. Understand Legal Requirements
+- **Action:** Familiarize yourself with any legal requirements or entitlements related to leave in your country or region.
+- **Examples:** This can include statutory leave entitlements, such as maternity leave, paternity leave, or sick leave.
+
+### 8. Document Your Findings
+- **Action:** Create a summary document outlining the key points of the company’s leave policy for your reference.
+- **Include:** 
+  - Types of leave available.
+  - Eligibility criteria.
+  - Application process.
+  - Any deadlines or important dates.
+
+## Conclusion
+By following these steps, you will gain a comprehensive understanding of your company’s leave policy, enabling you to make informed decisions about your time off work.
+2025-07-20 23:53:17 | INFO  | __main__:run:60 | --------------------
+
+2025-07-20 23:54:08 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 23:54:08 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 23:54:08 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 23:54:08 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 23:54:08 | INFO  | rag.utils.retriever:_embed_query:99 | Embedding query (real)...
+2025-07-20 23:54:09 | INFO  | rag.utils.retriever:_search_milvus:122 | Searching Milvus for top 50 results...
+2025-07-20 23:54:09 | INFO  | rag.utils.retriever:_rerank_documents:66 | Reranking documents...
+2025-07-20 23:54:10 | INFO  | rag.utils.retriever:_rerank_documents:80 |   - Document (index 3) is relevant with score 0.2821
+2025-07-20 23:54:10 | INFO  | rag.utils.retriever:_rerank_documents:80 |   - Document (index 2) is relevant with score 0.1882
+2025-07-20 23:54:10 | INFO  | rag.utils.retriever:_rerank_documents:80 |   - Document (index 4) is relevant with score 0.1272
+2025-07-20 23:54:10 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 5) is IRRELEVANT with score 0.0705. Filtering out.
+2025-07-20 23:54:10 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 1) is IRRELEVANT with score 0.0618. Filtering out.
+2025-07-20 23:54:10 | INFO  | rag.utils.retriever:_rerank_documents:84 | Reranked and filtered 3 documents from an initial 6.
+2025-07-20 23:54:10 | INFO  | __main__:run:45 | Documents: ["•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events\nWe believe that a happy team is a productive team. We regularly host:\n•\nTeam lunches and happy hours\n•\nHackathons and innovation days\n•\nMental health and wellness programs\n•\nMonthly recognition awards\n11. Resignation and Exit Process\nIf you choose to leave Yueniu Tech, we ask that you provide a minimum of four weeks' notice. HR \nwill guide you through the offboarding process and schedule an exit interview to gather feedback.\n12. Important Policies and Documents (Available on the \nIntranet)\nPlease take time to review the following documents, which can be accessed from the company \nintranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words", '6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits\nEmployees are paid monthly via direct deposit. Standard employee benefits include:\n•\nHealth insurance\n•\nPaid annual leave (minimum 20 days)\n•\nSick leave and bereavement leave\n•\nKiwiSaver contributions (for NZ-based employees)\n•\nProfessional development and training programs\n8. Performance Reviews\nPerformance reviews are conducted biannually to assess your progress, set career goals, and \nidentify training opportunities. We encourage open and constructive feedback between employees \nand managers.\n9. Career Development\nYueniu Tech supports your career growth through:\n•\nInternal job mobility\n•\nAccess to industry conferences and certifications\n•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events', '•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality\nRegular attendance is essential. If you are running late or unable to attend work, please notify your \nsupervisor and HR as early as possible.\n6.2 Dress Code\nOur dress code is smart casual unless otherwise specified for meetings or events.\n6.3 IT & Security Policies\nAll employees must adhere to the company’s IT usage and cybersecurity policies. Company \nequipment must be used for professional purposes only.\n6.4 Anti-Harassment Policy\nYueniu Tech is committed to maintaining a workplace free from harassment or discrimination. Any \nconcerns will be taken seriously and addressed promptly.\n6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits']
+2025-07-20 23:54:10 | INFO  | __main__:run:51 | Passing documents to CrewAI for final report generation...
+2025-07-20 23:54:15 | INFO  | __main__:run:58 | 
+--- Final Report ---
+2025-07-20 23:54:15 | INFO  | __main__:run:59 | # Company Leave Policy
+
+## Overview
+This document outlines the company's leave policy, including details on paid annual leave, sick leave, and bereavement leave. It also provides guidance on how to notify your supervisor and HR, and what steps to take for extended absences.
+
+## Review the Employee Handbook
+Access the company intranet to review the Employee Handbook. This document contains detailed information about the company's leave policies.
+
+## Understand Your Entitlements
+According to the Employee Handbook, employees are entitled to:
+- **Paid Annual Leave:** A minimum of 20 days per year.
+- **Sick Leave:** Available for when you are unwell.
+- **Bereavement Leave:** Provided for the loss of a close family member.
+
+## Notify Your Supervisor and HR
+If you need to take leave, inform your supervisor and HR as early as possible. This is in line with the Attendance and Punctuality policy, which requires you to notify your supervisor and HR if you are running late or unable to attend work.
+
+## Follow the Process for Extended Absences
+For extended absences, follow the guidelines provided in the Employee Handbook. This may include providing medical certificates for sick leave or other documentation for bereavement leave.
+
+## Contact HR for Further Assistance
+If you have any questions or need further clarification on the leave policy, reach out to the HR team:
+- **HR Manager:** Sarah Liu – sarah.liu@yueniutech.com
+- **HR Generalist:** Tom Zhang – tom.zhang@yueniutech.com
+- **Phone:** +64 9 123 4567
+
+By following these steps, you can ensure that you are adhering to the company's leave policy and taking the appropriate actions when you need time off.
+2025-07-20 23:54:15 | INFO  | __main__:run:60 | --------------------
+
+2025-07-21 00:02:29 | INFO  | __main__:run:40 | Received query: 'where is Changan Street?'
+2025-07-21 00:02:29 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-21 00:02:29 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-21 00:02:29 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'where is Changan Street?'
+2025-07-21 00:02:29 | INFO  | rag.utils.retriever:_embed_query:99 | Embedding query (real)...
+2025-07-21 00:02:30 | INFO  | rag.utils.retriever:_search_milvus:122 | Searching Milvus for top 50 results...
+2025-07-21 00:02:30 | INFO  | rag.utils.retriever:_rerank_documents:66 | Reranking documents...
+2025-07-21 00:02:31 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 2) is IRRELEVANT with score 0.0181. Filtering out.
+2025-07-21 00:02:31 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 0) is IRRELEVANT with score 0.0178. Filtering out.
+2025-07-21 00:02:31 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 3) is IRRELEVANT with score 0.0177. Filtering out.
+2025-07-21 00:02:31 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 5) is IRRELEVANT with score 0.0173. Filtering out.
+2025-07-21 00:02:31 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 1) is IRRELEVANT with score 0.0141. Filtering out.
+2025-07-21 00:02:31 | INFO  | rag.utils.retriever:_rerank_documents:84 | Reranked and filtered 0 documents from an initial 6.
+2025-07-21 00:02:31 | INFO  | __main__:run:45 | Documents: []
+2025-07-21 00:02:31 | INFO  | __main__:run:51 | Passing documents to CrewAI for final report generation...
+2025-07-21 00:02:38 | INFO  | __main__:run:58 | 
+--- Final Report ---
+2025-07-21 00:02:38 | INFO  | __main__:run:59 | # Guide to Locating Changan Street
+
+## Understand the Location
+Changan Street, also known as Chang'an Avenue, is a major east-west arterial road in Beijing, China. It stretches across the city and is one of the most important roads in Beijing.
+
+## Key Landmarks Along Changan Street
+- **Tiananmen Square**: One of the most significant landmarks in China, located at the eastern end of Changan Street.
+- **The Forbidden City**: Situated near Tiananmen Square, this historic palace complex is a major tourist attraction.
+- **Zhongnanhai**: The headquarters of the Chinese Communist Party and the State Council, located to the northwest of Tiananmen Square.
+- **The Great Hall of the People**: A large assembly building situated on the western side of Tiananmen Square.
+- **The National Centre for the Performing Arts**: A modern cultural venue located further west along Changan Street.
+
+## Navigating Changan Street
+### Public Transportation
+- **Subway**: Several subway lines run along Changan Street, including Lines 1 and 2, which circle the city center.
+- **Buses**: Numerous bus routes service Changan Street, providing convenient access to various points along the road.
+
+### Driving
+Changan Street is well-marked and accessible by car. However, traffic can be heavy, especially during peak hours.
+
+## Using Maps and Navigation Apps
+To find the exact location and plan your route, use navigation apps like Baidu Maps, Gaode Maps, or Google Maps. Enter "Changan Street, Beijing" to get detailed directions.
+
+## Visiting Tips
+- **Best Time to Visit**: Early morning or late afternoon to avoid crowds and heat.
+- **Photography**: Be mindful of security restrictions, especially near government buildings and sensitive areas.
+
+By following these steps, you can easily locate and navigate Changan Street in Beijing.
+2025-07-21 00:02:38 | INFO  | __main__:run:60 | --------------------
+
+2025-07-21 00:05:00 | INFO  | __main__:run:40 | Received query: 'where is Changan Street?'
+2025-07-21 00:05:00 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-21 00:05:00 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-21 00:05:00 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'where is Changan Street?'
+2025-07-21 00:05:00 | INFO  | rag.utils.retriever:_embed_query:99 | Embedding query (real)...
+2025-07-21 00:05:01 | INFO  | rag.utils.retriever:_search_milvus:122 | Searching Milvus for top 50 results...
+2025-07-21 00:05:01 | INFO  | rag.utils.retriever:_rerank_documents:66 | Reranking documents...
+2025-07-21 00:05:02 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 2) is IRRELEVANT with score 0.0181. Filtering out.
+2025-07-21 00:05:02 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 0) is IRRELEVANT with score 0.0178. Filtering out.
+2025-07-21 00:05:02 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 3) is IRRELEVANT with score 0.0177. Filtering out.
+2025-07-21 00:05:02 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 5) is IRRELEVANT with score 0.0173. Filtering out.
+2025-07-21 00:05:02 | WARNING | rag.utils.retriever:_rerank_documents:82 |   - Document (index 1) is IRRELEVANT with score 0.0141. Filtering out.
+2025-07-21 00:05:02 | INFO  | rag.utils.retriever:_rerank_documents:84 | Reranked and filtered 0 documents from an initial 6.
+2025-07-21 00:05:02 | INFO  | __main__:run:45 | Documents: []
+2025-07-21 00:05:02 | WARNING | __main__:run:47 | No documents found for the query. Returning empty report.

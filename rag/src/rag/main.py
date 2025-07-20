@@ -43,6 +43,9 @@ def run(query: str, mock: bool = False):
         retriever = Retriever(milvus_manager, mock=mock)
         documents = retriever.retrieve(query)
         logger.info(f"Documents: {documents}")
+        if len(documents) == 0:
+            logger.warning("No documents found for the query. Returning empty report.")
+            return
 
         if mock:
             logger.info("CrewAI execution skipped in mock mode.")

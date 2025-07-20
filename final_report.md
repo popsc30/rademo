@@ -1,41 +1,28 @@
-# Company Leave Policy Guide
+# Guide to Locating Changan Street
 
-## Introduction
-This guide provides a comprehensive overview of the company's leave policy, designed to help you understand your entitlements and the procedures for requesting leave.
+## Understand the Location
+Changan Street, also known as Chang'an Avenue, is a major east-west arterial road in Beijing, China. It stretches across the city and is one of the most important roads in Beijing.
 
-## 1. Review the Employee Handbook
-The company's leave policy is detailed in the Employee Handbook, which is available on the company intranet. 
+## Key Landmarks Along Changan Street
+- **Tiananmen Square**: One of the most significant landmarks in China, located at the eastern end of Changan Street.
+- **The Forbidden City**: Situated near Tiananmen Square, this historic palace complex is a major tourist attraction.
+- **Zhongnanhai**: The headquarters of the Chinese Communist Party and the State Council, located to the northwest of Tiananmen Square.
+- **The Great Hall of the People**: A large assembly building situated on the western side of Tiananmen Square.
+- **The National Centre for the Performing Arts**: A modern cultural venue located further west along Changan Street.
 
-**Action**: Access the company intranet and locate the Employee Handbook for comprehensive details.
+## Navigating Changan Street
+### Public Transportation
+- **Subway**: Several subway lines run along Changan Street, including Lines 1 and 2, which circle the city center.
+- **Buses**: Numerous bus routes service Changan Street, providing convenient access to various points along the road.
 
-## 2. Understand the Types of Leave
-The company offers several types of leave:
+### Driving
+Changan Street is well-marked and accessible by car. However, traffic can be heavy, especially during peak hours.
 
-- **Paid Annual Leave**: Minimum of 20 days per year.
-- **Sick Leave**: Available for when you are unwell.
-- **Bereavement Leave**: Provided for the loss of a family member.
+## Using Maps and Navigation Apps
+To find the exact location and plan your route, use navigation apps like Baidu Maps, Gaode Maps, or Google Maps. Enter "Changan Street, Beijing" to get detailed directions.
 
-**Action**: Check the Employee Handbook for specific details on eligibility, accrual rates, and procedures for each type of leave.
+## Visiting Tips
+- **Best Time to Visit**: Early morning or late afternoon to avoid crowds and heat.
+- **Photography**: Be mindful of security restrictions, especially near government buildings and sensitive areas.
 
-## 3. Requesting Leave
-To request leave, you should inform your manager and HR in advance. 
-
-Although the document does not specify exact procedures, it is standard practice to submit a formal leave request, often through an internal system or by filling out a leave form.
-
-**Action**: Contact your manager or HR to understand the specific process for requesting leave at Yueniu Tech.
-
-## 4. HR Contacts for Assistance
-If you have any questions or need further assistance, you can reach out to the HR team:
-
-- **HR Manager**: Sarah Liu – sarah.liu@yueniutech.com
-- **HR Generalist**: Tom Zhang – tom.zhang@yueniutech.com
-- **Phone**: +64 9 123 4567
-
-**Action**: Use the provided contact information to get in touch with HR for any leave-related queries.
-
-## 5. Additional Resources
-Other important policies and guidelines are available on the intranet, such as the Code of Conduct, Data Protection and Privacy Policy, Equal Employment Opportunity Policy, and Remote Work Guidelines. 
-
-**Action**: Explore these resources on the intranet for a broader understanding of company policies.
-
-By following these steps, you will be able to understand and navigate the company's leave policy effectively.
+By following these steps, you can easily locate and navigate Changan Street in Beijing.

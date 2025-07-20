@@ -62,4 +62,4 @@ pnpm-lock.yaml # if you use npm or yarn, delete this line
 .vscode/ # Uncomment if not already uncommented above and you want to ignore VS Code settings
 .idea/   # Uncomment if not already uncommented above and you want to ignore JetBrains IDE settings
 
-frontend/
+# frontend/

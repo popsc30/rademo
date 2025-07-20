@@ -58,9 +58,10 @@ class Retriever:
 
         return self._rerank_documents(query, documents)
 
-    def _rerank_documents(self, query: str, documents: list) -> list:
+    def _rerank_documents(self, query: str, documents: list, threshold: float = 0.1) -> list:
         """
-        Reranks the retrieved documents using Cohere's rerank model.
+        Reranks the retrieved documents using Cohere's rerank model and filters
+        them based on a relevance threshold.
         """
         logger.info("Reranking documents...")
         try:
@@ -74,8 +75,13 @@ class Retriever:
             
             reranked_docs = []
             for hit in rerank_response.results:
-                reranked_docs.append(documents[hit.index])
-            logger.info(f"Reranked {len(reranked_docs)} documents.")
+                if hit.relevance_score >= threshold:
+                    reranked_docs.append(documents[hit.index])
+                    logger.info(f"  - Document (index {hit.index}) is relevant with score {hit.relevance_score:.4f}")
+                else:
+                    logger.warning(f"  - Document (index {hit.index}) is IRRELEVANT with score {hit.relevance_score:.4f}. Filtering out.")
+
+            logger.info(f"Reranked and filtered {len(reranked_docs)} documents from an initial {len(documents)}.")
             return reranked_docs
         except Exception as e:
             logger.exception(f"Error reranking documents: {e}")
