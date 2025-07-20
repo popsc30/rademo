@@ -1,41 +1,58 @@
 # Company Leave Policy Guide
 
 ## Introduction
-This guide provides a comprehensive overview of the company's leave policy. It is essential for all employees to understand their entitlements and the procedures for taking leave.
+This document provides a comprehensive guide to understanding the company's leave policy. Follow the steps below to gain a thorough understanding of the various types of leave available, the process for requesting leave, and the necessary documentation.
 
 ## 1. Review the Employee Handbook
-- The leave policy is detailed in the **Employee Handbook**, available on the company intranet. Ensure you review this document thoroughly for complete information.
+The company's leave policy is detailed in the Employee Handbook, which is available on the company intranet.
+
+**Action**: Log in to the company intranet and locate the Employee Handbook.
 
 ## 2. Understand the Types of Leave
 The company offers several types of leave:
-- **Paid Annual Leave**: Employees are entitled to a minimum of 20 days of paid annual leave.
-- **Sick Leave**: Employees are entitled to sick leave, though the specific number of days may vary.
-- **Bereavement Leave**: Employees are entitled to bereavement leave, though the specific number of days may vary.
 
-## 3. Check Eligibility
-- Ensure you meet the eligibility criteria for the type of leave you wish to take. This information is typically found in the Employee Handbook.
+- **Paid Annual Leave**: Minimum of 20 days.
+- **Sick Leave**: Available for when you are unwell.
+- **Bereavement Leave**: Provided for the loss of a family member.
 
-## 4. Notify Your Manager
-- Inform your direct manager about your intention to take leave. This should be done as early as possible to allow for proper planning and coverage.
+**Action**: Read the sections in the Employee Handbook that detail each type of leave, including eligibility, accrual rates, and any required documentation.
 
-## 5. Submit a Leave Request
-- Follow the company’s procedure for submitting a leave request. This may involve filling out a form or sending an email to your manager and HR.
+## 3. Check Accrual and Eligibility
+The handbook provides information on how leave accrues and the eligibility criteria for taking leave.
+
+**Action**: Note down the accrual rates and any waiting periods or service requirements mentioned in the handbook.
+
+## 4. Requesting Leave
+To request leave, you typically need to submit a formal request through your manager or the HR department.
+
+**Action**: Follow the procedure outlined in the Employee Handbook for requesting leave. This may involve filling out a form or sending an email.
+
+## 5. Notify Your Manager
+It is important to inform your direct manager about your leave plans as early as possible.
+
+**Action**: Schedule a meeting or send an email to your manager to discuss your leave request.
 
 ## 6. HR Approval
-- Your leave request will need to be approved by the HR department. Ensure you follow up if you do not receive a response within the expected timeframe.
+After notifying your manager, your leave request will likely need approval from the HR department.
 
-## 7. Plan for Your Absence
-- Make arrangements to ensure your work responsibilities are covered during your absence. This may involve delegating tasks to colleagues or completing urgent work before you leave.
+**Action**: Ensure you follow up with HR to confirm that your leave has been approved and note any conditions or requirements mentioned.
 
-## 8. Return to Work
-- Upon returning from leave, briefly inform your manager about your return. If necessary, discuss any work that needs attention or any changes that occurred during your absence.
+## 7. Documentation
+Depending on the type of leave, you may need to provide documentation (e.g., a doctor’s note for sick leave).
 
-## Additional Resources
-For more detailed information, refer to the **Employee Handbook** available on the intranet.
+**Action**: Prepare and submit any required documentation as specified in the Employee Handbook.
 
----
+## 8. Returning from Leave
+The handbook should also provide guidelines on what to do when returning from leave, including any required check-ins or documentation.
 
-**Image:** A chart showing Q3 sales. (Path: /path/to/image.png)
----
+**Action**: Review the return-to-work process in the Employee Handbook and follow the outlined steps.
 
-This guide aims to provide clear and concise information on the company's leave policy. For any further questions or clarifications, please contact the HR department.
+## 9. Contact HR for Clarifications
+If you have any questions or need further clarification on the leave policy, reach out to the HR team.
+
+**Action**: 
+- Email HR Manager Sarah Liu at `sarah.liu@yueniutech.com`
+- Email HR Generalist Tom Zhang at `tom.zhang@yueniutech.com`
+- Call +64 9 123 4567
+
+By following these steps, you will have a comprehensive understanding of the company's leave policy and the process for requesting and taking leave.

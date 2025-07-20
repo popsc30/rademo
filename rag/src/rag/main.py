@@ -87,6 +87,14 @@ def train():
         raise Exception(f"An error occurred while training the crew: {e}")
 
 
+def serve():
+    """
+    Serves the RAG Crew API using uvicorn.
+    """
+    import uvicorn
+    logger.info("Starting the RAG Crew API server...")
+    uvicorn.run("rag.api:app", host="0.0.0.0", port=8002, reload=True)
+
 def main():
     """
     Main entry point to run the RAG system from the command line.
@@ -108,6 +116,9 @@ def main():
     # Sub-parser for the 'reset-db' command
     reset_parser = subparsers.add_parser("reset-db", help="Reset the Milvus database by dropping the collection.")
 
+    # Sub-parser for the 'serve' command
+    serve_parser = subparsers.add_parser("serve", help="Start the FastAPI server.")
+
     args = parser.parse_args()
 
     if args.command == "train":
@@ -120,6 +131,8 @@ def main():
             milvus_manager.reset_collection()
         except Exception as e:
             logger.exception(f"An error occurred while resetting the database: {e}")
+    elif args.command == "serve":
+        serve()
 
 
 if __name__ == "__main__":

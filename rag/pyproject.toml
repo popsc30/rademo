@@ -15,7 +15,10 @@ dependencies = [
     "pymilvus>=2.4.0,<2.5.0",
     "cohere>=5.0.0,<6.0.0",
     "python-dotenv>=1.0.0,<2.0.0",
-    "loguru>=0.7.2,<0.8.0"
+    "loguru>=0.7.2,<0.8.0",
+    "fastapi>=0.111.0,<0.112.0",
+    "uvicorn[standard]>=0.29.0,<0.30.0",
+    "python-multipart>=0.0.9,<0.0.10"
 ]
 
 [project.scripts]

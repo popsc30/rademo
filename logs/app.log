@@ -7278,3 +7278,231 @@ For any questions or further clarification, contact the HR team:
 If you ever have questions or need support, please don’t hesitate to reach out to your manager or the HR team.
 2025-07-20 22:20:48 | INFO  | __main__:run:60 | --------------------
 
+2025-07-20 22:23:06 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 22:23:06 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 22:23:06 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 22:23:06 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 22:23:06 | INFO  | rag.utils.retriever:_embed_query:93 | Embedding query (real)...
+2025-07-20 22:23:06 | INFO  | rag.utils.retriever:_search_milvus:116 | Searching Milvus for top 50 results...
+2025-07-20 22:23:07 | INFO  | rag.utils.retriever:_rerank_documents:65 | Reranking documents...
+2025-07-20 22:23:07 | INFO  | rag.utils.retriever:_rerank_documents:78 | Reranked 5 documents.
+2025-07-20 22:23:07 | INFO  | __main__:run:45 | Documents: ["•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events\nWe believe that a happy team is a productive team. We regularly host:\n•\nTeam lunches and happy hours\n•\nHackathons and innovation days\n•\nMental health and wellness programs\n•\nMonthly recognition awards\n11. Resignation and Exit Process\nIf you choose to leave Yueniu Tech, we ask that you provide a minimum of four weeks' notice. HR \nwill guide you through the offboarding process and schedule an exit interview to gather feedback.\n12. Important Policies and Documents (Available on the \nIntranet)\nPlease take time to review the following documents, which can be accessed from the company \nintranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words", '6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits\nEmployees are paid monthly via direct deposit. Standard employee benefits include:\n•\nHealth insurance\n•\nPaid annual leave (minimum 20 days)\n•\nSick leave and bereavement leave\n•\nKiwiSaver contributions (for NZ-based employees)\n•\nProfessional development and training programs\n8. Performance Reviews\nPerformance reviews are conducted biannually to assess your progress, set career goals, and \nidentify training opportunities. We encourage open and constructive feedback between employees \nand managers.\n9. Career Development\nYueniu Tech supports your career growth through:\n•\nInternal job mobility\n•\nAccess to industry conferences and certifications\n•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events', '•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality\nRegular attendance is essential. If you are running late or unable to attend work, please notify your \nsupervisor and HR as early as possible.\n6.2 Dress Code\nOur dress code is smart casual unless otherwise specified for meetings or events.\n6.3 IT & Security Policies\nAll employees must adhere to the company’s IT usage and cybersecurity policies. Company \nequipment must be used for professional purposes only.\n6.4 Anti-Harassment Policy\nYueniu Tech is committed to maintaining a workplace free from harassment or discrimination. Any \nconcerns will be taken seriously and addressed promptly.\n6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits', '•\nCustomer Focus: We prioritize the needs and satisfaction of our clients.\n•\nContinuous Improvement: We are committed to personal and professional growth.\n3. Your First Day\nOn your first day, please arrive at the reception by 9:00 AM. You will be greeted by our HR \nrepresentative, who will give you a tour of the office and introduce you to your team. Your \nworkstation will be set up, and you’ll receive your ID badge and necessary equipment.\n4. Required Documents\nPlease bring the following documents on your first day:\n•\nValid government-issued ID\n•\nBank account details for payroll setup\n•\nSigned offer letter and employment contract\n•\nCompleted tax forms (IR330 for New Zealand employees)\n•\nWork visa (if applicable)\n5. HR Contacts\nIf you have any questions or concerns, our HR team is here to help:\n•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality', 'intranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words\nWe hope this guide gives you a comprehensive overview of what to expect at Yueniu Tech. If you \never have questions or need support, please don’t hesitate to reach out to your manager or the HR \nteam.\nWelcome aboard – we’re excited to have you with us!\nLet me know if you’d like a Google Docs link or formatted Word version as well!']
+2025-07-20 22:23:07 | INFO  | __main__:run:51 | Passing documents to CrewAI for final report generation...
+2025-07-20 22:23:15 | INFO  | __main__:run:58 | 
+--- Final Report ---
+2025-07-20 22:23:15 | INFO  | __main__:run:59 | ---
+
+# Company Leave Policy
+
+## Overview
+
+This report outlines the company's leave policy, providing a comprehensive guide to understanding and managing your leave entitlements.
+
+## 1. **Review the Employee Handbook**
+
+- The leave policy details are available in the **Employee Handbook**, accessible from the company intranet. Thoroughly review this document to understand specific leave policies, including eligibility, accrual rates, and any restrictions.
+
+## 2. **Understand the Types of Leave**
+
+### **Paid Annual Leave**
+- Employees are entitled to a minimum of **20 days** of paid annual leave per year.
+
+### **Sick Leave**
+- Employees are provided with sick leave to cover periods of illness.
+
+### **Bereavement Leave**
+- Specific leave is available for employees dealing with the loss of a family member.
+
+## 3. **Check Accrual and Eligibility**
+
+- The Employee Handbook will detail how leave accrues and the conditions under which you are eligible to take leave. Typically, leave accrual begins after a certain period of employment.
+
+## 4. **Requesting Leave**
+
+- To request leave, submit a formal request to your manager. This can usually be done through an online system or by filling out a leave request form available on the intranet.
+- Ensure you provide sufficient notice as per company policy to allow for proper planning and coverage.
+
+## 5. **Approval Process**
+
+- Your manager will review your leave request. Approval may depend on factors such as workload, team coverage, and adherence to company policy.
+- Once approved, your leave will be recorded in the company’s leave management system.
+
+## 6. **During Your Leave**
+
+- While on leave, you should remain accessible for any urgent matters unless otherwise specified by company policy.
+- Keep your manager informed of your status and any changes to your leave plan.
+
+## 7. **Returning from Leave**
+
+- Notify your manager in advance of your return date. 
+- Upon returning, you may be required to submit any necessary documentation or complete a return-to-work form.
+
+## 8. **Additional Resources**
+
+For any questions or further clarification, contact the HR team:
+
+- **HR Manager**: Sarah Liu – sarah.liu@yueniutech.com
+- **HR Generalist**: Tom Zhang – tom.zhang@yueniutech.com
+- **Phone**: +64 9 123 4567
+
+---
+
+**Image:** A chart showing Q3 sales. (Path: /path/to/image.png)
+---
+
+By following these steps, you can effectively manage your leave in accordance with the company’s policy.
+2025-07-20 22:23:15 | INFO  | __main__:run:60 | --------------------
+
+2025-07-20 22:23:42 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 22:23:42 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 22:23:42 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 22:23:42 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 22:23:42 | INFO  | rag.utils.retriever:_embed_query:93 | Embedding query (real)...
+2025-07-20 22:23:42 | INFO  | rag.utils.retriever:_search_milvus:116 | Searching Milvus for top 50 results...
+2025-07-20 22:23:43 | INFO  | rag.utils.retriever:_rerank_documents:65 | Reranking documents...
+2025-07-20 22:23:43 | INFO  | rag.utils.retriever:_rerank_documents:78 | Reranked 5 documents.
+2025-07-20 22:23:43 | INFO  | __main__:run:45 | Documents: ["•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events\nWe believe that a happy team is a productive team. We regularly host:\n•\nTeam lunches and happy hours\n•\nHackathons and innovation days\n•\nMental health and wellness programs\n•\nMonthly recognition awards\n11. Resignation and Exit Process\nIf you choose to leave Yueniu Tech, we ask that you provide a minimum of four weeks' notice. HR \nwill guide you through the offboarding process and schedule an exit interview to gather feedback.\n12. Important Policies and Documents (Available on the \nIntranet)\nPlease take time to review the following documents, which can be accessed from the company \nintranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words", '6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits\nEmployees are paid monthly via direct deposit. Standard employee benefits include:\n•\nHealth insurance\n•\nPaid annual leave (minimum 20 days)\n•\nSick leave and bereavement leave\n•\nKiwiSaver contributions (for NZ-based employees)\n•\nProfessional development and training programs\n8. Performance Reviews\nPerformance reviews are conducted biannually to assess your progress, set career goals, and \nidentify training opportunities. We encourage open and constructive feedback between employees \nand managers.\n9. Career Development\nYueniu Tech supports your career growth through:\n•\nInternal job mobility\n•\nAccess to industry conferences and certifications\n•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events', '•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality\nRegular attendance is essential. If you are running late or unable to attend work, please notify your \nsupervisor and HR as early as possible.\n6.2 Dress Code\nOur dress code is smart casual unless otherwise specified for meetings or events.\n6.3 IT & Security Policies\nAll employees must adhere to the company’s IT usage and cybersecurity policies. Company \nequipment must be used for professional purposes only.\n6.4 Anti-Harassment Policy\nYueniu Tech is committed to maintaining a workplace free from harassment or discrimination. Any \nconcerns will be taken seriously and addressed promptly.\n6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits', '•\nCustomer Focus: We prioritize the needs and satisfaction of our clients.\n•\nContinuous Improvement: We are committed to personal and professional growth.\n3. Your First Day\nOn your first day, please arrive at the reception by 9:00 AM. You will be greeted by our HR \nrepresentative, who will give you a tour of the office and introduce you to your team. Your \nworkstation will be set up, and you’ll receive your ID badge and necessary equipment.\n4. Required Documents\nPlease bring the following documents on your first day:\n•\nValid government-issued ID\n•\nBank account details for payroll setup\n•\nSigned offer letter and employment contract\n•\nCompleted tax forms (IR330 for New Zealand employees)\n•\nWork visa (if applicable)\n5. HR Contacts\nIf you have any questions or concerns, our HR team is here to help:\n•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality', 'intranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words\nWe hope this guide gives you a comprehensive overview of what to expect at Yueniu Tech. If you \never have questions or need support, please don’t hesitate to reach out to your manager or the HR \nteam.\nWelcome aboard – we’re excited to have you with us!\nLet me know if you’d like a Google Docs link or formatted Word version as well!']
+2025-07-20 22:23:43 | INFO  | __main__:run:51 | Passing documents to CrewAI for final report generation...
+2025-07-20 22:23:51 | INFO  | __main__:run:58 | 
+--- Final Report ---
+2025-07-20 22:23:51 | INFO  | __main__:run:59 | # Company Leave Policy Guide
+
+## Overview
+This guide provides a comprehensive overview of the company's leave policy, including how to access detailed information, understand your entitlements, and the procedures for requesting leave. Additionally, it outlines the steps to take if you need further clarification and highlights the importance of adhering to the attendance and punctuality policy.
+
+## Accessing the Leave Policy
+1. **Review the Employee Handbook**
+   - The leave policy is detailed in the Employee Handbook, which is available on the company intranet. Access the intranet and review the handbook for comprehensive information.
+
+## Understanding Your Entitlements
+2. **Standard Employee Benefits**
+   - The company offers the following standard leave entitlements:
+     - **Paid Annual Leave**: Minimum of 20 days
+     - **Sick Leave**
+     - **Bereavement Leave**
+
+## Requesting Leave
+3. **Procedures for Requesting Leave**
+   - Follow the procedures outlined in the Employee Handbook to request leave. This typically involves:
+     - Submitting a leave request form, if available.
+     - Notifying your direct supervisor or manager of your leave dates.
+     - Ensuring that your leave does not conflict with critical work deadlines or team commitments.
+
+## HR Contact for Clarifications
+4. **Contact Information for HR**
+   - If you have any questions or need further clarification on the leave policy, contact the HR team using the following information:
+     - **HR Manager**: Sarah Liu – sarah.liu@yueniutech.com
+     - **HR Generalist**: Tom Zhang – tom.zhang@yueniutech.com
+     - **Phone**: +64 9 123 4567
+
+## Attendance and Punctuality Policy
+5. **Adherence to Attendance and Punctuality**
+   - Familiarize yourself with the company’s attendance and punctuality policy. If you are running late or unable to attend work, notify your supervisor and HR as early as possible. This policy is essential for maintaining smooth operations and should be adhered to even when planning leave.
+
+By following these steps, you can effectively understand and utilize the company's leave policy.
+2025-07-20 22:23:51 | INFO  | __main__:run:60 | --------------------
+
+2025-07-20 22:24:05 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 22:24:05 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 22:24:05 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 22:24:05 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 22:24:05 | INFO  | rag.utils.retriever:_embed_query:93 | Embedding query (real)...
+2025-07-20 22:24:06 | INFO  | rag.utils.retriever:_search_milvus:116 | Searching Milvus for top 50 results...
+2025-07-20 22:24:06 | INFO  | rag.utils.retriever:_rerank_documents:65 | Reranking documents...
+2025-07-20 22:24:07 | INFO  | rag.utils.retriever:_rerank_documents:78 | Reranked 5 documents.
+2025-07-20 22:24:07 | INFO  | __main__:run:45 | Documents: ["•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events\nWe believe that a happy team is a productive team. We regularly host:\n•\nTeam lunches and happy hours\n•\nHackathons and innovation days\n•\nMental health and wellness programs\n•\nMonthly recognition awards\n11. Resignation and Exit Process\nIf you choose to leave Yueniu Tech, we ask that you provide a minimum of four weeks' notice. HR \nwill guide you through the offboarding process and schedule an exit interview to gather feedback.\n12. Important Policies and Documents (Available on the \nIntranet)\nPlease take time to review the following documents, which can be accessed from the company \nintranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words", '6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits\nEmployees are paid monthly via direct deposit. Standard employee benefits include:\n•\nHealth insurance\n•\nPaid annual leave (minimum 20 days)\n•\nSick leave and bereavement leave\n•\nKiwiSaver contributions (for NZ-based employees)\n•\nProfessional development and training programs\n8. Performance Reviews\nPerformance reviews are conducted biannually to assess your progress, set career goals, and \nidentify training opportunities. We encourage open and constructive feedback between employees \nand managers.\n9. Career Development\nYueniu Tech supports your career growth through:\n•\nInternal job mobility\n•\nAccess to industry conferences and certifications\n•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events', '•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality\nRegular attendance is essential. If you are running late or unable to attend work, please notify your \nsupervisor and HR as early as possible.\n6.2 Dress Code\nOur dress code is smart casual unless otherwise specified for meetings or events.\n6.3 IT & Security Policies\nAll employees must adhere to the company’s IT usage and cybersecurity policies. Company \nequipment must be used for professional purposes only.\n6.4 Anti-Harassment Policy\nYueniu Tech is committed to maintaining a workplace free from harassment or discrimination. Any \nconcerns will be taken seriously and addressed promptly.\n6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits', '•\nCustomer Focus: We prioritize the needs and satisfaction of our clients.\n•\nContinuous Improvement: We are committed to personal and professional growth.\n3. Your First Day\nOn your first day, please arrive at the reception by 9:00 AM. You will be greeted by our HR \nrepresentative, who will give you a tour of the office and introduce you to your team. Your \nworkstation will be set up, and you’ll receive your ID badge and necessary equipment.\n4. Required Documents\nPlease bring the following documents on your first day:\n•\nValid government-issued ID\n•\nBank account details for payroll setup\n•\nSigned offer letter and employment contract\n•\nCompleted tax forms (IR330 for New Zealand employees)\n•\nWork visa (if applicable)\n5. HR Contacts\nIf you have any questions or concerns, our HR team is here to help:\n•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality', 'intranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words\nWe hope this guide gives you a comprehensive overview of what to expect at Yueniu Tech. If you \never have questions or need support, please don’t hesitate to reach out to your manager or the HR \nteam.\nWelcome aboard – we’re excited to have you with us!\nLet me know if you’d like a Google Docs link or formatted Word version as well!']
+2025-07-20 22:24:07 | INFO  | __main__:run:51 | Passing documents to CrewAI for final report generation...
+2025-07-20 22:24:12 | INFO  | __main__:run:58 | 
+--- Final Report ---
+2025-07-20 22:24:12 | INFO  | __main__:run:59 | ---
+
+## Company Leave Policy Guide
+
+### 1. Review the Employee Handbook
+The detailed leave policy is available in the **Employee Handbook**, which can be accessed on the company intranet.
+
+### 2. Types of Leave
+- **Paid Annual Leave**: Employees are entitled to a minimum of 20 days of paid annual leave.
+- **Sick Leave**: Employees are provided with sick leave for when they are unwell.
+- **Bereavement Leave**: Employees are granted leave for bereavement purposes.
+
+### 3. How to Apply for Leave
+- Speak to your direct manager about your leave request.
+- Submit a formal leave request through the company’s designated system or HR department.
+
+### 4. Notification
+- Notify your manager and HR as early as possible when planning to take leave.
+- Ensure that your absence does not disrupt team workflow and that your responsibilities are covered during your leave.
+
+### 5. HR Contacts for Assistance
+If you have any questions or need further assistance, contact the HR team:
+- **HR Manager**: Sarah Liu – sarah.liu@yueniutech.com
+- **HR Generalist**: Tom Zhang – tom.zhang@yueniutech.com
+- **Phone**: +64 9 123 4567
+
+### 6. Additional Resources
+For more detailed information, review the following documents available on the intranet:
+- Code of Conduct
+- Employee Handbook
+- Data Protection and Privacy Policy
+- Equal Employment Opportunity Policy
+- Remote Work Guidelines
+
+If you need further clarification or have specific questions about your leave, don’t hesitate to reach out to your manager or the HR team.
+2025-07-20 22:24:12 | INFO  | __main__:run:60 | --------------------
+
+2025-07-20 22:24:28 | INFO  | __main__:run:40 | Received query: 'what's the company's leave policy?'
+2025-07-20 22:24:28 | INFO  | rag.utils.milvus_manager:__init__:17 | Successfully connected to Milvus.
+2025-07-20 22:24:28 | INFO  | rag.utils.milvus_manager:_create_collection_if_not_exists:28 | Collection 'rag_collection' already exists.
+2025-07-20 22:24:28 | INFO  | rag.utils.retriever:retrieve:46 | Embedding query and retrieving documents for: 'what's the company's leave policy?'
+2025-07-20 22:24:28 | INFO  | rag.utils.retriever:_embed_query:93 | Embedding query (real)...
+2025-07-20 22:24:28 | INFO  | rag.utils.retriever:_search_milvus:116 | Searching Milvus for top 50 results...
+2025-07-20 22:24:28 | INFO  | rag.utils.retriever:_rerank_documents:65 | Reranking documents...
+2025-07-20 22:24:29 | INFO  | rag.utils.retriever:_rerank_documents:78 | Reranked 5 documents.
+2025-07-20 22:24:29 | INFO  | __main__:run:45 | Documents: ["•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events\nWe believe that a happy team is a productive team. We regularly host:\n•\nTeam lunches and happy hours\n•\nHackathons and innovation days\n•\nMental health and wellness programs\n•\nMonthly recognition awards\n11. Resignation and Exit Process\nIf you choose to leave Yueniu Tech, we ask that you provide a minimum of four weeks' notice. HR \nwill guide you through the offboarding process and schedule an exit interview to gather feedback.\n12. Important Policies and Documents (Available on the \nIntranet)\nPlease take time to review the following documents, which can be accessed from the company \nintranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words", '6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits\nEmployees are paid monthly via direct deposit. Standard employee benefits include:\n•\nHealth insurance\n•\nPaid annual leave (minimum 20 days)\n•\nSick leave and bereavement leave\n•\nKiwiSaver contributions (for NZ-based employees)\n•\nProfessional development and training programs\n8. Performance Reviews\nPerformance reviews are conducted biannually to assess your progress, set career goals, and \nidentify training opportunities. We encourage open and constructive feedback between employees \nand managers.\n9. Career Development\nYueniu Tech supports your career growth through:\n•\nInternal job mobility\n•\nAccess to industry conferences and certifications\n•\nLeadership training and mentoring opportunities\nSpeak to your manager or HR about your career path and development goals.\n10. Company Culture and Social Events', '•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality\nRegular attendance is essential. If you are running late or unable to attend work, please notify your \nsupervisor and HR as early as possible.\n6.2 Dress Code\nOur dress code is smart casual unless otherwise specified for meetings or events.\n6.3 IT & Security Policies\nAll employees must adhere to the company’s IT usage and cybersecurity policies. Company \nequipment must be used for professional purposes only.\n6.4 Anti-Harassment Policy\nYueniu Tech is committed to maintaining a workplace free from harassment or discrimination. Any \nconcerns will be taken seriously and addressed promptly.\n6.5 Health and Safety\nWe are dedicated to providing a safe work environment. Familiarize yourself with emergency exits, \nfirst aid kits, and safety procedures.\n7. Payroll and Benefits', '•\nCustomer Focus: We prioritize the needs and satisfaction of our clients.\n•\nContinuous Improvement: We are committed to personal and professional growth.\n3. Your First Day\nOn your first day, please arrive at the reception by 9:00 AM. You will be greeted by our HR \nrepresentative, who will give you a tour of the office and introduce you to your team. Your \nworkstation will be set up, and you’ll receive your ID badge and necessary equipment.\n4. Required Documents\nPlease bring the following documents on your first day:\n•\nValid government-issued ID\n•\nBank account details for payroll setup\n•\nSigned offer letter and employment contract\n•\nCompleted tax forms (IR330 for New Zealand employees)\n•\nWork visa (if applicable)\n5. HR Contacts\nIf you have any questions or concerns, our HR team is here to help:\n•\nHR Manager: Sarah Liu – sarah.liu@yueniutech.com\n•\nHR Generalist: Tom Zhang – tom.zhang@yueniutech.com\n•\nPhone: +64 9 123 4567\n6. Workplace Policies\n6.1 Attendance and Punctuality', 'intranet:\n•\nCode of Conduct\n•\nEmployee Handbook\n•\nData Protection and Privacy Policy\n•\nEqual Employment Opportunity Policy\n•\nRemote Work Guidelines\nFinal Words\nWe hope this guide gives you a comprehensive overview of what to expect at Yueniu Tech. If you \never have questions or need support, please don’t hesitate to reach out to your manager or the HR \nteam.\nWelcome aboard – we’re excited to have you with us!\nLet me know if you’d like a Google Docs link or formatted Word version as well!']
+2025-07-20 22:24:29 | INFO  | __main__:run:51 | Passing documents to CrewAI for final report generation...
+2025-07-20 22:24:36 | INFO  | __main__:run:58 | 
+--- Final Report ---
+2025-07-20 22:24:36 | INFO  | __main__:run:59 | # Company Leave Policy Guide
+
+## Introduction
+This guide provides a comprehensive overview of the company's leave policy, designed to help you understand your entitlements and the procedures for requesting leave.
+
+## 1. Review the Employee Handbook
+The company's leave policy is detailed in the Employee Handbook, which is available on the company intranet. 
+
+**Action**: Access the company intranet and locate the Employee Handbook for comprehensive details.
+
+## 2. Understand the Types of Leave
+The company offers several types of leave:
+
+- **Paid Annual Leave**: Minimum of 20 days per year.
+- **Sick Leave**: Available for when you are unwell.
+- **Bereavement Leave**: Provided for the loss of a family member.
+
+**Action**: Check the Employee Handbook for specific details on eligibility, accrual rates, and procedures for each type of leave.
+
+## 3. Requesting Leave
+To request leave, you should inform your manager and HR in advance. 
+
+Although the document does not specify exact procedures, it is standard practice to submit a formal leave request, often through an internal system or by filling out a leave form.
+
+**Action**: Contact your manager or HR to understand the specific process for requesting leave at Yueniu Tech.
+
+## 4. HR Contacts for Assistance
+If you have any questions or need further assistance, you can reach out to the HR team:
+
+- **HR Manager**: Sarah Liu – sarah.liu@yueniutech.com
+- **HR Generalist**: Tom Zhang – tom.zhang@yueniutech.com
+- **Phone**: +64 9 123 4567
+
+**Action**: Use the provided contact information to get in touch with HR for any leave-related queries.
+
+## 5. Additional Resources
+Other important policies and guidelines are available on the intranet, such as the Code of Conduct, Data Protection and Privacy Policy, Equal Employment Opportunity Policy, and Remote Work Guidelines. 
+
+**Action**: Explore these resources on the intranet for a broader understanding of company policies.
+
+By following these steps, you will be able to understand and navigate the company's leave policy effectively.
+2025-07-20 22:24:36 | INFO  | __main__:run:60 | --------------------
+

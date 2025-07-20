@@ -1,58 +1,41 @@
-# Company Leave Policy
+# Company Leave Policy Guide
 
-## Overview
-Welcome aboard! We’re excited to have you with us. This guide provides a comprehensive overview of the company's leave policy to ensure you understand your entitlements and the procedures for requesting leave.
-
----
+## Introduction
+This guide provides a comprehensive overview of the company's leave policy, designed to help you understand your entitlements and the procedures for requesting leave.
 
 ## 1. Review the Employee Handbook
-The leave policy is detailed in the **Employee Handbook**, which is available on the company intranet.
+The company's leave policy is detailed in the Employee Handbook, which is available on the company intranet. 
 
-- **Access the intranet** and locate the Employee Handbook for comprehensive information on leave entitlements, procedures, and guidelines.
+**Action**: Access the company intranet and locate the Employee Handbook for comprehensive details.
 
----
+## 2. Understand the Types of Leave
+The company offers several types of leave:
 
-## 2. Understand Your Entitlements
-According to the documents, employees are entitled to:
+- **Paid Annual Leave**: Minimum of 20 days per year.
+- **Sick Leave**: Available for when you are unwell.
+- **Bereavement Leave**: Provided for the loss of a family member.
 
-- **Paid Annual Leave:** Minimum of 20 days per year.
-- **Sick Leave:** Entitlements and procedures are detailed in the Employee Handbook.
-- **Bereavement Leave:** Specific days allocated for bereavement, detailed in the Employee Handbook.
-
----
+**Action**: Check the Employee Handbook for specific details on eligibility, accrual rates, and procedures for each type of leave.
 
 ## 3. Requesting Leave
-To request leave, follow these steps:
+To request leave, you should inform your manager and HR in advance. 
 
-1. **Speak to Your Manager:**
-   - Discuss your leave request with your direct manager.
+Although the document does not specify exact procedures, it is standard practice to submit a formal leave request, often through an internal system or by filling out a leave form.
 
-2. **Submit a Formal Request:**
-   - Use the company’s leave request form, which can typically be found on the intranet or provided by your manager.
+**Action**: Contact your manager or HR to understand the specific process for requesting leave at Yueniu Tech.
 
-3. **HR Approval:**
-   - Your leave request will need approval from the HR department. Ensure you allow sufficient time for processing.
+## 4. HR Contacts for Assistance
+If you have any questions or need further assistance, you can reach out to the HR team:
 
----
+- **HR Manager**: Sarah Liu – sarah.liu@yueniutech.com
+- **HR Generalist**: Tom Zhang – tom.zhang@yueniutech.com
+- **Phone**: +64 9 123 4567
 
-## 4. During Your Leave
-While on leave, stay accessible if necessary, especially for critical issues. Check with your manager for specific expectations.
+**Action**: Use the provided contact information to get in touch with HR for any leave-related queries.
 
----
+## 5. Additional Resources
+Other important policies and guidelines are available on the intranet, such as the Code of Conduct, Data Protection and Privacy Policy, Equal Employment Opportunity Policy, and Remote Work Guidelines. 
 
-## 5. Returning from Leave
-- Notify your manager and HR of your return date in advance.
-- If required, submit any necessary documentation (e.g., medical certificates for sick leave).
+**Action**: Explore these resources on the intranet for a broader understanding of company policies.
 
----
-
-## 6. Additional Resources
-For any questions or further clarification, contact the HR team:
-
-- **HR Manager:** Sarah Liu – sarah.liu@yueniutech.com
-- **HR Generalist:** Tom Zhang – tom.zhang@yueniutech.com
-- **Phone:** +64 9 123 4567
-
----
-
-If you ever have questions or need support, please don’t hesitate to reach out to your manager or the HR team.
+By following these steps, you will be able to understand and navigate the company's leave policy effectively.
