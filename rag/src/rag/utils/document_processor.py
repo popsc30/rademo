@@ -61,7 +61,7 @@ class DocumentProcessor:
 
         # 2. Get descriptions for images and insert placeholders
         processed_text = self._describe_images_and_insert_placeholders(raw_text, extracted_images)
-
+        logger.info(f"Processed text: {processed_text}")
         # 3. Split text into chunks
         text_chunks = self.text_splitter.split_text(processed_text)
 
@@ -119,39 +119,68 @@ class DocumentProcessor:
         return text, image_paths
 
     def _extract_from_docx(self, file_path: str) -> (str, List[Path]):
-        """Extracts text and images from a DOCX file."""
+        """Extracts text and images from a DOCX file, preserving their order."""
         logger.info(f"Extracting from DOCX: {file_path}")
         doc = docx.Document(file_path)
-        text = ""
+        text_content = ""
         image_paths = []
         
-        # Keep track of image index
-        img_index = 0
+        # Map rId to image part for quick lookup
+        image_part_map = {
+            rId: rel.target_part
+            for rId, rel in doc.part.rels.items()
+            if "image" in rel.target_ref
+        }
+        
+        img_counter = 0
 
-        for rel in doc.part.rels.values():
-            if "image" in rel.target_ref:
-                img_index += 1
-                image_bytes = rel.target_part.blob
-                
-                # Determine image extension
-                image_ext = rel.target_part.content_type.split('/')[-1]
-                if image_ext == "jpeg":
-                    image_ext = "jpg"
-                
-                image_filename = f"docx_{Path(file_path).stem}_img{img_index}.{image_ext}"
-                img_save_path = IMAGE_DIR / image_filename
-
-                with open(img_save_path, "wb") as img_file:
-                    img_file.write(image_bytes)
-                image_paths.append(img_save_path)
-                text += f"\n[image_placeholder:{img_save_path}]\n"
+        # Define the namespaces we'll need for our XPath queries
+        NAMESPACES = {
+            'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+            'a': 'http://schemas.openxmlformats.org/drawingml/2006/main',
+            'r': 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
+        }
 
         for para in doc.paragraphs:
-            text += para.text + "\n"
+            para_content = ""
+            for run in para.runs:
+                # Check for drawing element in the run
+                drawing_elems = run.element.findall('.//w:drawing', namespaces=NAMESPACES)
+                
+                if drawing_elems:
+                    for drawing in drawing_elems:
+                        blip_elems = drawing.findall('.//a:blip', namespaces=NAMESPACES)
+                        for blip in blip_elems:
+                            rId = blip.get('{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed')
+                            if rId and rId in image_part_map:
+                                image_part = image_part_map[rId]
+                                image_bytes = image_part.blob
+                                
+                                img_counter += 1
+                                image_ext = image_part.content_type.split('/')[-1]
+                                if image_ext == "jpeg":
+                                    image_ext = "jpg"
+                                
+                                image_filename = f"docx_{Path(file_path).stem}_img{img_counter}.{image_ext}"
+                                img_save_path = IMAGE_DIR / image_filename
+
+                                if not img_save_path.exists():
+                                    with open(img_save_path, "wb") as img_file:
+                                        img_file.write(image_bytes)
+                                
+                                if img_save_path not in image_paths:
+                                    image_paths.append(img_save_path)
+                                
+                                para_content += f"\n[image_placeholder:{img_save_path}]\n"
+                else:
+                    # This is a text run
+                    para_content += run.text
             
+            text_content += para_content + "\n"
+
         logger.info(f"Extracted {len(image_paths)} images from {file_path}")
-        logger.warning(f"Extracted text: {text}")
-        return text, image_paths
+        logger.warning(f"Extracted text: {text_content}")
+        return text_content, image_paths
 
     def _describe_images_and_insert_placeholders(self, text: str, image_paths: List[Path]) -> str:
         """
@@ -182,7 +211,7 @@ class DocumentProcessor:
         if self.mock:
             logger.info(f"Getting description for {img_path} (mock)...")
             return f"A mock description for the image at {img_path}."
-
+        
         logger.info(f"Getting description for {img_path} (real)...")
         try:
             with open(img_path, "rb") as image_file:
