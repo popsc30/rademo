@@ -1,28 +1,28 @@
-# Guide to Locating Changan Street
+# GST Reconciliation Guide
 
-## Understand the Location
-Changan Street, also known as Chang'an Avenue, is a major east-west arterial road in Beijing, China. It stretches across the city and is one of the most important roads in Beijing.
+## Introduction
+This guide provides a clear, step-by-step process for performing GST reconciliation using data from Xero and the IRD. Follow these steps to ensure accurate and compliant GST reconciliation.
 
-## Key Landmarks Along Changan Street
-- **Tiananmen Square**: One of the most significant landmarks in China, located at the eastern end of Changan Street.
-- **The Forbidden City**: Situated near Tiananmen Square, this historic palace complex is a major tourist attraction.
-- **Zhongnanhai**: The headquarters of the Chinese Communist Party and the State Council, located to the northwest of Tiananmen Square.
-- **The Great Hall of the People**: A large assembly building situated on the western side of Tiananmen Square.
-- **The National Centre for the Performing Arts**: A modern cultural venue located further west along Changan Street.
+## Step-by-Step Guide
 
-## Navigating Changan Street
-### Public Transportation
-- **Subway**: Several subway lines run along Changan Street, including Lines 1 and 2, which circle the city center.
-- **Buses**: Numerous bus routes service Changan Street, providing convenient access to various points along the road.
+### 1. Determine the Source of Data
+- **For the most recent tax year (April 2024 - March 2025)**:
+  - Use data from Xero if there are outstanding payments and a tax return has not yet been filed with the IRD.
+- **For the tax year before that (prior to March 2024)**:
+  - Use data from the IRD as it has already been filed.
 
-### Driving
-Changan Street is well-marked and accessible by car. However, traffic can be heavy, especially during peak hours.
+### 2. Use Outstanding Amounts
+- If the IRD hasn’t assessed the GST periods yet, use the amounts outstanding per the Xero GST returns.
 
-## Using Maps and Navigation Apps
-To find the exact location and plan your route, use navigation apps like Baidu Maps, Gaode Maps, or Google Maps. Enter "Changan Street, Beijing" to get detailed directions.
+### 3. Extract GST Payable/Receivable
+- **Option 1**: Directly use the amount from the balance sheet.
+- **Option 2**: Pull the amount from the GST reconciliation sheet on Xero.
 
-## Visiting Tips
-- **Best Time to Visit**: Early morning or late afternoon to avoid crowds and heat.
-- **Photography**: Be mindful of security restrictions, especially near government buildings and sensitive areas.
+### 4. Refer to Specific Figures for Guidance
+- **Figure 7**: Shows how the GST amount should be set from Xero and IRD.
+- **Figure 8**: Illustrates the calculation on the GST amount in the previous year period.
+- **Figure 9**: Displays the Xero balance sheet and Excel workpaper ledger.
+- **Figure 10**: Shows the GST Rec Sheet in Xero related to workpaper ledger cells.
 
-By following these steps, you can easily locate and navigate Changan Street in Beijing.
+## Conclusion
+By following these steps, you can accurately perform GST reconciliation using the appropriate data sources and tools available in Xero. Ensure you refer to the specified figures for detailed guidance and accurate calculations.

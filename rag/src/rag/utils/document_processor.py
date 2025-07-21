@@ -1,5 +1,6 @@
 import base64
 import json
+import mimetypes
 import os
 from pathlib import Path
 from typing import List, Dict, Any
@@ -32,13 +33,12 @@ class DocumentProcessor:
         """
         self.mock = mock
         if not self.mock:
-            self.bedrock_client = boto3.client("bedrock-runtime", region_name=os.environ.get("AWS_REGION", "us-east-1"))
+            self.bedrock_client = boto3.client("bedrock-runtime", region_name=os.environ.get("AWS_REGION", "ap-southeast-2"))
         else:
             self.bedrock_client = None
             logger.info("DocumentProcessor running in mock mode.")
             
-        self.embedding_model_id = "amazon.titan-embed-text-v2:0"
-        self.image_description_model_id = os.environ.get("MODEL", "bedrock/apac.anthropic.claude-3-5-sonnet-20241022-v2:0")
+        self.embedding_model_id = "amazon.titan-embed-image-v1"
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=1000,
             chunk_overlap=200,
@@ -150,6 +150,7 @@ class DocumentProcessor:
             text += para.text + "\n"
             
         logger.info(f"Extracted {len(image_paths)} images from {file_path}")
+        logger.warning(f"Extracted text: {text}")
         return text, image_paths
 
     def _describe_images_and_insert_placeholders(self, text: str, image_paths: List[Path]) -> str:
@@ -187,39 +188,32 @@ class DocumentProcessor:
             with open(img_path, "rb") as image_file:
                 image_bytes = image_file.read()
 
-            # Using Claude 3 Haiku as an example
-            body = json.dumps({
-                "anthropic_version": "bedrock-2023-05-31",
-                "max_tokens": 1024,
+            base64_image = base64.b64encode(image_bytes).decode("utf-8")
+            
+            content = [
+                {
+                    "image": {
+                        "format": "png",
+                        "source": { "bytes": base64_image }
+                    }
+                },
+                {"text": "Describe this image in detail."}
+            ]
+            request_body = {
                 "messages": [
                     {
                         "role": "user",
-                        "content": [
-                            {
-                                "type": "image",
-                                "source": {
-                                    "type": "base64",
-                                    "media_type": "image/jpeg", # Or other appropriate media type
-                                    "data": base64.b64encode(image_bytes).decode("utf-8"),
-                                },
-                            },
-                            {
-                                "type": "text",
-                                "text": "Describe this image in detail."
-                            }
-                        ],
+                        "content": content
                     }
                 ],
-            })
-
-            response = self.bedrock_client.invoke_model(
-                body=body, 
-                modelId=self.image_description_model_id,
-                accept='application/json',
-                contentType='application/json'
-            )
-            response_body = json.loads(response.get('body').read())
-            return response_body['content'][0]['text']
+                "inferenceConfig": {
+                    "max_new_tokens": 300,
+                    "temperature": 0.5,
+                    "top_p": 0.9
+                }
+            }
+            response_body = self._invoke_bedrock("apac.amazon.nova-lite-v1:0", request_body)
+            return response_body.get('output', {}).get('message', {}).get('content', [{}])[0].get('text', '')
 
         except Exception as e:
             logger.exception(f"Error getting description for {img_path}: {e}")
@@ -262,9 +256,22 @@ class DocumentProcessor:
                 })
             except Exception as e:
                 logger.exception(f"Error generating embedding for chunk: {e}")
-                # Optionally skip this chunk or handle the error differently
                 continue
         return processed_chunks
+    
+    def _invoke_bedrock(self, model_id: str, body: Dict[str, Any]) -> Dict[str, Any]:
+        """Generic method to invoke a Bedrock model without retry logic."""
+        try:
+            response = self.bedrock_client.invoke_model(
+                body=json.dumps(body),
+                modelId=model_id,
+                contentType='application/json',
+                accept='application/json'
+            )
+            return json.loads(response.get('body').read())
+        except Exception as e:
+            logger.error(f"A Bedrock client error occurred when invoking {model_id}: {e}")
+            raise
 
 if __name__ == '__main__':
     # Example usage for testing purposes

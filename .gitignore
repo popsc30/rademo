@@ -63,3 +63,5 @@ pnpm-lock.yaml # if you use npm or yarn, delete this line
 .idea/   # Uncomment if not already uncommented above and you want to ignore JetBrains IDE settings
 
 # frontend/
+
+images/

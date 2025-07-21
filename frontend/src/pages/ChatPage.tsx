@@ -8,6 +8,8 @@ import { query } from "@/api/chatService";
 import { loadChatHistory, saveChatHistory } from "@/utils/sessionStorage";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/components/theme-provider";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface ChatMessageProps {
     message: Message;
@@ -18,12 +20,21 @@ function ChatMessage({ message }: ChatMessageProps) {
     return (
         <div className={`flex items-end gap-2 ${isUser ? "justify-end" : "justify-start"}`}>
             <div
-                className={`px-4 py-2 rounded-lg max-w-xs lg:max-w-md break-words ${isUser
+                className={`px-4 py-2 rounded-lg max-w-2xl break-words ${isUser
                         ? "bg-primary text-primary-foreground"
                         : "bg-muted"
                     }`}
             >
-                {message.text}
+                <div className="prose prose-sm dark:prose-invert max-w-none">
+                    <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                            a: ({ node, ...props }) => <a {...props} target="_blank" rel="noopener noreferrer" />,
+                        }}
+                    >
+                        {message.text}
+                    </ReactMarkdown>
+                </div>
             </div>
         </div>
     );

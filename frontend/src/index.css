@@ -66,3 +66,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+.prose pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.prose code {
+  word-break: break-all;
+}
