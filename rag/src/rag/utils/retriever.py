@@ -46,28 +46,39 @@ class Retriever:
         logger.info(f"Embedding query and retrieving documents for: '{query}'")
         query_embedding = self._embed_query(query)
         search_results = self._search_milvus(query_embedding, top_n=top_n)
+        logger.info(f"search_results type: {type(search_results)}, value: {search_results}")
         
         if not search_results:
             return []
 
-        documents = [result.entity.get('text') for result in search_results]
-        
+        # Robustly convert Hits/SequenceIterator to list
+
+        results = []
+        for hit in search_results:
+            results.append(hit.entity)
+
         if self.mock:
             logger.info("Skipping reranking in mock mode.")
-            return documents[:5]
+            return results[:5]
 
-        return self._rerank_documents(query, documents)
+        return self._rerank_documents(query, results)
 
-    def _rerank_documents(self, query: str, documents: list, threshold: float = 0.1) -> list:
+    def _rerank_documents(self, query: str, results: list, threshold: float = 0.1) -> list:
         """
-        Reranks the retrieved documents using Cohere's rerank model and filters
+        Reranks the retrieved results using Cohere's rerank model and filters
         them based on a relevance threshold.
         """
         logger.info("Reranking documents...")
+        documents = []
+        for result in results:
+            documents.append(result.get('text'))
+            logger.info(f": type: {type(result.get('text'))}, value: {result.get('text')}")
         try:
             co = cohere.BedrockClientV2(aws_region="ap-northeast-1")
+
+
             rerank_response = co.rerank(
-                model=self.rerank_model_id,
+                model="cohere.rerank-v3-5:0",
                 query=query,
                 documents=documents,
                 top_n=min(5, len(documents)),
@@ -132,7 +143,8 @@ class Retriever:
                 limit=top_n,
                 output_fields=["text", "metadata"]
             )
-            return results[0] # search returns a list of results for each query
+
+            return results[0]  # search returns a list of results for each query
         except Exception as e:
             logger.exception(f"Error searching Milvus: {e}")
             return []

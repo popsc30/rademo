@@ -69,7 +69,7 @@ npm install
 AWS_REGION="us-east-1"  # 或者您选择的区域
 EMBEDDING_MODEL="amazon.titan-embed-text-v2:0"
 # 你可以换成对应的openai/openai-embedding模型，然后取消rerank
-RERANK_MODEL="cohere.rerank-multilingual-v3.0" # 或者 cohere.rerank-english-v3.0
+RERANK_MODEL= # 或者 cohere.rerank-english-v3.0
 # 注意：请根据您的 Bedrock 模型访问权限填写正确的模型ID
 
 # Milvus 数据库配置

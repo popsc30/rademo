@@ -1,9 +1,12 @@
 import shutil
 import tempfile
+import json
+import asyncio
 from pathlib import Path
 
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 
@@ -74,6 +77,61 @@ async def upload_file(file: UploadFile = File(...)):
     finally:
         # Ensure the file stream is closed
         file.file.close()
+
+@app.post("/query/stream")
+async def query_rag_stream(request: QueryRequest):
+    """
+    Receives a query and returns a streaming response with step-by-step progress updates.
+    """
+    async def generate_steps():
+        try:
+            logger.info(f"Starting streaming query: '{request.query}'")
+            
+            # Step 1: Document Retrieval
+            yield f"data: {json.dumps({'step': 'retrieving', 'message': 'Searching for relevant documents...'})}\n\n"
+            await asyncio.sleep(0.1)  # Small delay for better UX
+            
+            milvus_manager = MilvusManager()
+            retriever = Retriever(milvus_manager)
+            documents = retriever.retrieve(request.query)
+            
+            yield f"data: {json.dumps({'step': 'retrieved', 'message': f'Found {len(documents)} relevant documents', 'count': len(documents)})}\n\n"
+            await asyncio.sleep(0.1)
+            
+            if len(documents) == 0:
+                yield f"data: {json.dumps({'step': 'complete', 'message': 'No relevant documents found. Please try uploading more documents or rephrasing your query.', 'result': 'No relevant documents found.'})}\n\n"
+                return
+            
+            logger.info(f"Retrieved {len(documents)} documents for streaming query.")
+            
+            # Step 2: AI Analysis
+            yield f"data: {json.dumps({'step': 'analyzing', 'message': 'Analyzing document content with AI agents...'})}\n\n"
+            await asyncio.sleep(0.1)
+            
+            # Step 3: Report Generation  
+            yield f"data: {json.dumps({'step': 'generating', 'message': 'Generating comprehensive report...'})}\n\n"
+            await asyncio.sleep(0.1)
+            
+            # Call CrewAI (this is where the actual work happens)
+            inputs = {
+                'topic': request.query,
+                'documents': documents,
+            }
+            final_report = RagCrew().crew().kickoff(inputs=inputs)
+            
+            # Step 4: Complete
+            yield f"data: {json.dumps({'step': 'complete', 'message': 'Analysis complete', 'result': str(final_report.raw), 'meta': {'documents': documents}})}\n\n"
+            
+        except Exception as e:
+            logger.exception(f"An error occurred during streaming query: {e}")
+            yield f"data: {json.dumps({'step': 'error', 'message': f'Error occurred: {str(e)}'})}\n\n"
+    
+    return StreamingResponse(generate_steps(), media_type="text/event-stream", headers={
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Cache-Control"
+    })
 
 @app.post("/query")
 async def query_rag(request: QueryRequest):
