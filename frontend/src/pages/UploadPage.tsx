@@ -1,96 +1,69 @@
-import { useState } from 'react';
-import type { DragEvent, ChangeEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { uploadFile } from "@/api/chatService";
 
-const UploadPage = () => {
-  const [file, setFile] = useState<File | null>(null);
-  const [message, setMessage] = useState('');
-  const [isUploading, setIsUploading] = useState(false);
-  const [error, setError] = useState('');
+export default function UploadPage() {
+    const [file, setFile] = useState<File | null>(null);
+    const [isUploading, setIsUploading] = useState(false);
+    const [uploadMessage, setUploadMessage] = useState("");
 
-  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) {
-      setFile(e.target.files[0]);
-    }
-  };
+    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (e.target.files && e.target.files.length > 0) {
+            setFile(e.target.files[0]);
+            setUploadMessage("");
+        }
+    };
 
-  const handleDrop = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      setFile(e.dataTransfer.files[0]);
-    }
-  };
+    const handleUpload = async () => {
+        if (!file) return;
 
-  const handleDragOver = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-  };
+        setIsUploading(true);
+        setUploadMessage(`Uploading "${file.name}"...`);
 
-  const handleUpload = async () => {
-    if (!file) return;
+        try {
+            const responseMessage = await uploadFile(file);
+            setUploadMessage(responseMessage);
+        } catch (error) {
+            setUploadMessage(error instanceof Error ? error.message : "An unknown error occurred.");
+        } finally {
+            setIsUploading(false);
+        }
+    };
 
-    setIsUploading(true);
-    setMessage('File is being uploaded and processed, this may take some time, please wait...');
-    setError('');
+    return (
+        <div className="flex flex-col items-center justify-center h-screen p-4 bg-background">
+            <div className="w-full max-w-md p-8 space-y-6 border rounded-lg shadow-xl bg-card text-card-foreground">
+                <div className="text-center">
+                    <h1 className="text-2xl font-bold">Upload Knowledge Document</h1>
+                    <p className="text-muted-foreground">Upload a PDF or DOCX file to update the knowledge base.</p>
+                </div>
 
-    const formData = new FormData();
-    formData.append('file', file);
+                <div
+                    className="flex flex-col items-center justify-center p-8 border-2 border-dashed rounded-lg cursor-pointer hover:border-primary"
+                    onClick={() => document.getElementById('file-upload')?.click()}
+                >
+                    <Input id="file-upload" type="file" onChange={handleFileChange} accept=".pdf,.docx" className="hidden" />
+                    <p className="text-muted-foreground">{file ? file.name : "Drag & drop or click to select a file"}</p>
+                </div>
 
-    try {
-      const response = await fetch('http://127.0.0.1:8002/upload', {
-        method: 'POST',
-        body: formData,
-      });
+                <Button onClick={handleUpload} disabled={!file || isUploading} className="w-full">
+                    {isUploading ? "Uploading..." : "Upload"}
+                </Button>
 
-      const data = await response.json();
+                {uploadMessage && (
+                    <div className="p-3 text-center rounded-lg bg-muted">
+                        <p className="text-sm text-muted-foreground">{uploadMessage}</p>
+                    </div>
+                )}
 
-      if (!response.ok) {
-        throw new Error(data.detail || 'Upload failed');
-      }
-
-      setMessage(data.message);
-    } catch (err: any) {
-      setError(err.message);
-      setMessage('');
-    } finally {
-      setIsUploading(false);
-    }
-  };
-
-  return (
-    <div className="flex flex-col h-screen bg-gray-900 text-white">
-      <header className="bg-gray-800 p-4 shadow-md flex justify-between items-center">
-        <h1 className="text-xl font-bold">Upload Document</h1>
-        <Link to="/" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Back to Chat
-        </Link>
-      </header>
-      <main className="flex-1 flex items-center justify-center">
-        <div className="w-full max-w-md p-8 space-y-6 bg-gray-800 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold text-center">Upload to Knowledge Base</h2>
-          <div
-            className="flex items-center justify-center w-full h-32 border-2 border-dashed border-gray-600 rounded-lg cursor-pointer hover:bg-gray-700"
-            onDrop={handleDrop}
-            onDragOver={handleDragOver}
-            onClick={() => (document.getElementById('file-upload') as HTMLInputElement)?.click()}
-          >
-            <p>{file ? file.name : 'Drag file here, or click to select file'}</p>
-            <input id="file-upload" type="file" className="hidden" onChange={handleFileChange} accept=".pdf,.docx" />
-          </div>
-          <button
-            onClick={handleUpload}
-            className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:bg-gray-600"
-            disabled={!file || isUploading}
-          >
-            {isUploading ? 'Uploading...' : 'Upload'}
-          </button>
-          {message && <p className="text-green-400 text-center">{message}</p>}
-          {error && <p className="text-red-500 text-center">{error}</p>}
+                <div className="text-center">
+                    <Link to="/" className="text-sm text-primary hover:underline">
+                        Return to Chat
+                    </Link>
+                </div>
+            </div>
         </div>
-      </main>
-    </div>
-  );
-};
-
-export default UploadPage;
+    );
+} 

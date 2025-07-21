@@ -1,32 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LoginPage from './pages/LoginPage';
-import ChatPage from './pages/ChatPage';
-import UploadPage from './pages/UploadPage';
-import AuthGuard from './components/AuthGuard';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ChatPage from "@/pages/ChatPage";
+import UploadPage from "@/pages/UploadPage";
+import { ThemeProvider } from "@/components/theme-provider";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route 
-          path="/" 
-          element={
-            <AuthGuard>
-              <ChatPage />
-            </AuthGuard>
-          } 
-        />
-        <Route 
-          path="/upload" 
-          element={
-            <AuthGuard>
-              <UploadPage />
-            </AuthGuard>
-          } 
-        />
-      </Routes>
-    </Router>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <Router>
+        <Routes>
+          <Route path="/" element={<ChatPage />} />
+          <Route path="/upload" element={<UploadPage />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
