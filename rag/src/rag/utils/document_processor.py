@@ -38,7 +38,7 @@ class DocumentProcessor:
             self.bedrock_client = None
             logger.info("DocumentProcessor running in mock mode.")
             
-        self.embedding_model_id = "amazon.titan-embed-image-v1"
+        self.embedding_model_id = "amazon.titan-embed-text-v2:0"
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=1000,
             chunk_overlap=200,
@@ -235,11 +235,8 @@ class DocumentProcessor:
         processed_chunks = []
         for chunk in text_chunks:
             try:
-                # Determine the correct input key based on the model name
-                if 'image' in self.embedding_model_id:
-                    body = json.dumps({"inputImage": chunk}) # This is illustrative; text chunks shouldn't be passed to image models
-                else:
-                    body = json.dumps({"inputText": chunk})
+              
+                body = json.dumps({"inputText": chunk})
 
                 response = self.bedrock_client.invoke_model(
                     body=body,

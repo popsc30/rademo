@@ -5,7 +5,6 @@ from pathlib import Path
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from loguru import logger
 
 
 from rag.crew import RagCrew
@@ -13,6 +12,8 @@ from rag.utils.document_processor import DocumentProcessor
 from rag.utils.logging_config import setup_logging
 from rag.utils.milvus_manager import MilvusManager
 from rag.utils.retriever import Retriever
+from loguru import logger
+
 
 # Initialize FastAPI app
 app = FastAPI(
